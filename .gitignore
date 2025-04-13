@@ -117,4 +117,3 @@ dist
 /.history
 .vitepress/cache
 dist
-/package-lock.json
