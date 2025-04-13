@@ -4,7 +4,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   base: "/",
   cleanUrls: true,
-  outDir: "./dist/website",
+  outDir: "./dist",
   srcExclude: ["**/README.md", "**/TODO.md"],
   lang: "zh-CN",
   title: "onlyoffice文档服务中国版",
