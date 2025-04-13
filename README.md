@@ -1,1 +1,1 @@
-documentserver 中国版 文档站点
+documentserver 中国版文档站点
