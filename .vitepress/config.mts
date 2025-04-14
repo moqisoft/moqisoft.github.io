@@ -20,7 +20,7 @@ export default defineConfig({
     nav: [
       { text: "首页", link: "/" },
       { text: "产品介绍", link: "/docs/product/summary" },
-      { text: "在线体验", link: "http://117.62.235.170:8114/wenqu/" },
+      { text: "在线体验", link: "" },
     ],
 
     sidebar: {
@@ -42,16 +42,16 @@ export default defineConfig({
             { text: "个性配置", link: "/docs/feature/customization" },
             { text: "安装插件", link: "/docs/feature/plugins" },
             { text: "安装字体", link: "/docs/feature/fonts" },
-            { text: "连接器", link: "/docs/feature/fonts" },
-            { text: "WS降级", link: "/docs/feature/fonts" },
+            { text: "连接器", link: "/docs/feature/connector" },
+            { text: "WS降级", link: "/docs/feature/longpoll" },
           ],
         }
       ],
     },
 
-    // socialLinks: [
-    //   { icon: "github", link: "https://github.com/vuejs/vitepress" },
-    // ],
+    socialLinks: [
+      { icon: "github", link: "https://github.com/moqisoft/moqisoft.github.io" },
+    ],
 
     footer: {
       // message:

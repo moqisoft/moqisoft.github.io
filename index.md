@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 在线体验
-      link: http://117.62.235.170:8114/wenqu/
+      link: 
     - theme: alt
       text: 产品介绍
       link: /docs/product/summary
