@@ -9,8 +9,8 @@
 - 附赠大量中文配置文档
 - 可自定义 logo
 - 可自定义品牌
-- 可使用连接器及 advancedApi
-- Websocket 支持降级为长轮询
+- 可使用连接器及 Automation API
+- Websocket 支持强制降级为长轮询
 
 更多功能不断加入中，敬请期待。部分高级功能见 [高级版](./vip.md)
 

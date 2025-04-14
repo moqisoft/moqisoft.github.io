@@ -1,13 +1,13 @@
 # 安装部署
 
-## 获得镜像
+## 拉取镜像
 
 ```bash
 docker pull pangnate/documentserver-china:latest
 ```
 
 > [!TIP]
-> 如果因网络问题，无法访问 docker hub，可使用阿里云镜像 xxx
+> 如果因为网络等原因无法拉取，可加 QQ 群获取离线版镜像
 
 ## 启动编辑服务
 

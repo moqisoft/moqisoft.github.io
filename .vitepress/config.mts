@@ -39,11 +39,11 @@ export default defineConfig({
           text: "功能增强",
           collapsed: false,
           items: [
-            { text: "个性配置", link: "/docs/install/plugins" },
-            { text: "安装插件", link: "/docs/install/plugins" },
-            { text: "安装字体", link: "/docs/install/fonts" },
-            { text: "连接器", link: "/docs/install/fonts" },
-            { text: "WS降级", link: "/docs/install/fonts" },
+            { text: "个性配置", link: "/docs/feature/customization" },
+            { text: "安装插件", link: "/docs/feature/plugins" },
+            { text: "安装字体", link: "/docs/feature/fonts" },
+            { text: "连接器", link: "/docs/feature/fonts" },
+            { text: "WS降级", link: "/docs/feature/fonts" },
           ],
         }
       ],
