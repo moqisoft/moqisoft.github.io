@@ -3,7 +3,7 @@
 ## 拉取镜像
 
 ```bash
-docker pull pangnate/documentserver-china:latest
+docker pull moqisoft/documentserver:latest
 ```
 
 > [!TIP]
@@ -25,13 +25,13 @@ docker run -itd \
     -v /host/path/to/sdkjs-plugins:/var/www/onlyoffice/documentserver/sdkjs-plugins \  # 插件目录
     -v /proc/cpuinfo:/host/proc/cpuinfo \  # 高级版授权必须
     -v /sys/class/net:/host/sys/class/net \  # 高级版授权必须
-    pangnate/documentserver-china:latest
+    moqisoft/documentserver-china:latest
 ```
 
 ## 启动 example
 
 ```bash
-docker exec only8-china sudo supervisorctl start ds:example
+docker exec ds-china sudo supervisorctl start ds:example
 ```
 
 example 仅用于本地简单集成测试，生产环境建议关闭

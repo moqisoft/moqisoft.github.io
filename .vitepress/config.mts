@@ -56,7 +56,7 @@ export default defineConfig({
     footer: {
       // message:
       //   'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
-      // copyright: "Copyright © 2025 pangnate",
+      copyright: "Copyright © 2025 moqisoft.com",
     },
 
     docFooter: {
