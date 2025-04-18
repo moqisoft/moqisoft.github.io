@@ -8,6 +8,7 @@ docker pull moqisoft/documentserver:latest
 
 > [!TIP]
 > 如果因为网络等原因无法拉取，可加 QQ 群（183026419）获取离线版镜像
+> 百度网络：https://pan.baidu.com/s/1nwCSvQrwdi8yrGik5A4MUQ?pwd=6666
 
 ## 启动编辑服务
 
