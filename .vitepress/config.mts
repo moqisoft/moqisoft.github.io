@@ -33,6 +33,7 @@ export default defineConfig({
             { text: "安装部署", link: "/docs/install/docker" },
             { text: "标准版", link: "/docs/product/free" },
             { text: "高级版", link: "/docs/product/vip" },
+            { text: "更新日志", link: "/docs/product/changelog" },
           ],
         },
         {
@@ -44,6 +45,8 @@ export default defineConfig({
             { text: "安装字体", link: "/docs/feature/fonts" },
             { text: "连接器", link: "/docs/feature/connector" },
             { text: "WS降级", link: "/docs/feature/longpoll" },
+            { text: "防截图水印", link: "/docs/feature/watermark" },
+            { text: "内部剪切板", link: "/docs/feature/copyout" },
           ],
         }
       ],

@@ -1,6 +1,6 @@
 # 个性化配置
 
-对编辑器的个性化配置全部在 `editorConfig.customization` 对象内，以下配置的字段全部是位于 `customization` 内顶层
+对编辑器的个性化配置全部在 `editorConfig.customization` 对象内
 
 > [!TIP]
 > 部分功能为高级版功能，如有需要请联系交流群（183026419）管理员
@@ -9,15 +9,17 @@
 
 ```json
 {
-  "logo": {
-    // 是否显示logo
-    "visible": true,
-    // embed模式
-    "imageEmbedded": "https://imageurl",
-    // 普通模式
-    "image": "https://imageurl",
-    // 链接地址
-    "url": "https://siteurl"
+  "customization": {
+    "logo": {
+      // 是否显示logo
+      "visible": true,
+      // embed模式
+      "imageEmbedded": "https://imageurl",
+      // 普通模式
+      "image": "https://imageurl",
+      // 链接地址
+      "url": "https://siteurl"
+    }
   }
 }
 ```
@@ -26,13 +28,15 @@
 
 ```json
 {
-  "customer": {
-    "address": "My City, 123a-45",
-    "mail": "john@example.com",
-    "logo": "https://example.com/logo-big.png",
-    "name": "John Smith and Co.",
-    "phone": "123456789",
-    "www": "example.com"
+  "customization": {
+    "customer": {
+      "address": "My City, 123a-45",
+      "mail": "john@example.com",
+      "logo": "https://example.com/logo-big.png",
+      "name": "John Smith and Co.",
+      "phone": "123456789",
+      "www": "example.com"
+    }
   }
 }
 ```
@@ -41,20 +45,22 @@
 
 ```json
 {
-  // 左侧关于，true 显示 false 隐藏，下同
-  "about": false,
-  // 左侧反馈
-  "feedback": false,
-  // 顶部返回
-  "goback": false,
-  // 帮助菜单
-  "help": false,
-  // 底部状态栏拼写检查相关菜单
-  "layout": {
-    "statusBar": {
-      "actionStatus": false,
-      "docLang": false,
-      "textLang": false
+  "customization": {
+    // 左侧关于，true 显示 false 隐藏，下同
+    "about": false,
+    // 左侧反馈
+    "feedback": false,
+    // 顶部返回
+    "goback": false,
+    // 帮助菜单
+    "help": false,
+    // 底部状态栏拼写检查相关菜单
+    "layout": {
+      "statusBar": {
+        "actionStatus": false,
+        "docLang": false,
+        "textLang": false
+      }
     }
   }
 }
@@ -64,10 +70,12 @@
 
 ```json
 {
-  // 加载logo，留空则不显示，仅支持 desktop 和 mobile 模式
-  "loaderLogo": "https://imageurl",
-  // 加载文字，留空则不显示
-  "loaderName": "yourtext"
+  "customization": {
+    // 加载logo，留空则不显示，仅支持 desktop 和 mobile 模式
+    "loaderLogo": "https://imageurl",
+    // 加载文字，留空则不显示
+    "loaderName": "yourtext"
+  }
 }
 ```
 
@@ -75,11 +83,13 @@
 
 ```json
 {
-  "font": {
-    // 默认字号
-    "size": 12,
-    // 默认字体
-    "name": "SimSun"
+  "customization": {
+    "font": {
+      // 默认字号
+      "size": 12,
+      // 默认字体
+      "name": "SimSun"
+    }
   }
 }
 ```
@@ -88,8 +98,10 @@
 
 ```json
 {
-  "features": {
-    "spellcheck": false
+  "customization": {
+    "features": {
+      "spellcheck": false
+    }
   }
 }
 ```
