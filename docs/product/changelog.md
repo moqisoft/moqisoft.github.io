@@ -18,4 +18,4 @@
 - 添加公文办公场景常用中文字体    
 - 可自定义 logo 及品牌    
 - 可使用连接器及 Automation API    
-- Websocket 支持通过配置强制降级为长轮询    
+- 增加 Websocket 可配置强制降级为长轮询 [文档](../feature/longpoll.md)    
