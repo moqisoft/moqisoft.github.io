@@ -35,6 +35,7 @@ export default defineConfig({
             { text: "标准版", link: "/docs/product/free" },
             { text: "高级版", link: "/docs/product/vip" },
             { text: "更新日志", link: "/docs/product/changelog" },
+            { text: "集成示例", link: "/docs/product/example" },
             { text: "联系我们", link: "/docs/product/about" },
           ],
         },
