@@ -14,6 +14,8 @@ Connector 是一个允许从外部源编辑文本文档、电子表格、演示�
 const connector = docEditor.createConnector();
 ```
 
+介绍文档见官方连接器章节 https://api.onlyoffice.com/docs/docs-api/usage-api/automation-api/    
+
 连接器具有与插件相同的接口。可以在 [插件和宏页面](https://api.onlyoffice.com/docs/plugin-and-macros/customization/context-menu/) 找到大量可用的代码示例。
 
 中国版完整实现了官方连接器的功能，可以轻松实现外部对文档的各类操作。

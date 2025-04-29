@@ -21,6 +21,7 @@ export default defineConfig({
       { text: "首页", link: "/" },
       { text: "产品介绍", link: "/docs/product/summary" },
       { text: "在线体验", link: "" },
+      { text: "联系我们", link: "/docs/product/about" },
     ],
 
     sidebar: {
@@ -34,6 +35,7 @@ export default defineConfig({
             { text: "标准版", link: "/docs/product/free" },
             { text: "高级版", link: "/docs/product/vip" },
             { text: "更新日志", link: "/docs/product/changelog" },
+            { text: "联系我们", link: "/docs/product/about" },
           ],
         },
         {
