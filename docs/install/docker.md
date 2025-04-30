@@ -2,13 +2,28 @@
 
 ## 拉取镜像
 
+#### docker hub
 ```bash
 docker pull moqisoft/documentserver:latest
 ```
 
+#### 阿里云
+AMD64
+```bash
+docker pull crpi-jfv3ro7j3i1a1bjk.cn-shanghai.personal.cr.aliyuncs.com/moqisoft/documentserver:8.3.3-amd64
+```
+
+ARM64
+```bash
+docker pull crpi-jfv3ro7j3i1a1bjk.cn-shanghai.personal.cr.aliyuncs.com/moqisoft/documentserver:8.3.3-arm64
+```
+
+#### 百度网盘
+
+https://pan.baidu.com/s/1nwCSvQrwdi8yrGik5A4MUQ?pwd=6666
+
 > [!TIP]
 > 如果因为网络等原因无法拉取，可加 QQ 群（183026419）获取离线版镜像        
-> 或通过百度网盘下载离线镜像：https://pan.baidu.com/s/1nwCSvQrwdi8yrGik5A4MUQ?pwd=6666
 
 ## 启动编辑服务
 
