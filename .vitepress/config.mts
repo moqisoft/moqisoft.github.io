@@ -32,8 +32,8 @@ export default defineConfig({
           items: [
             { text: "产品介绍", link: "/docs/product/summary" },
             { text: "安装部署", link: "/docs/install/docker" },
-            { text: "标准版", link: "/docs/product/free" },
-            { text: "高级版", link: "/docs/product/vip" },
+            { text: "版本比较", link: "/docs/product/compare" },
+            { text: "高级版授权", link: "/docs/product/vip" },
             { text: "更新日志", link: "/docs/product/changelog" },
             { text: "集成示例", link: "/docs/product/example" },
             { text: "联系我们", link: "/docs/product/about" },
