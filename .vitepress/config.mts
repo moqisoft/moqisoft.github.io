@@ -9,6 +9,13 @@ export default defineConfig({
   lang: "zh-CN",
   title: "onlyoffice文档服务中国版",
   description: "onlyoffice，office专家。部署简单，即开即用",
+  // <meta name="google-adsense-account" content="ca-pub-7016841222608649">
+  head: [
+    [
+      "meta",
+      { name: "google-adsense-account", content: "ca-pub-7016841222608649" },
+    ],
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "",
@@ -51,12 +58,15 @@ export default defineConfig({
             { text: "防截图水印", link: "/docs/feature/watermark" },
             { text: "内部剪切板", link: "/docs/feature/copyout" },
           ],
-        }
+        },
       ],
     },
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/moqisoft/moqisoft.github.io" },
+      {
+        icon: "github",
+        link: "https://github.com/moqisoft/moqisoft.github.io",
+      },
     ],
 
     footer: {
