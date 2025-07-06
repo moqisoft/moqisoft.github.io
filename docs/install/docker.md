@@ -10,12 +10,12 @@ docker pull moqisoft/documentserver:latest
 #### 阿里云
 AMD64
 ```bash
-docker pull crpi-jfv3ro7j3i1a1bjk.cn-shanghai.personal.cr.aliyuncs.com/moqisoft/documentserver:8.3.3-amd64
+docker pull crpi-jfv3ro7j3i1a1bjk.cn-shanghai.personal.cr.aliyuncs.com/moqisoft/documentserver:9.0.2-amd64
 ```
 
 ARM64
 ```bash
-docker pull crpi-jfv3ro7j3i1a1bjk.cn-shanghai.personal.cr.aliyuncs.com/moqisoft/documentserver:8.3.3-arm64
+docker pull crpi-jfv3ro7j3i1a1bjk.cn-shanghai.personal.cr.aliyuncs.com/moqisoft/documentserver:9.0.2-arm64
 ```
 
 #### 百度网盘
