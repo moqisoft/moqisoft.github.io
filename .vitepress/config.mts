@@ -24,6 +24,15 @@ export default defineConfig({
         scr: "https://cdn.ampproject.org/v0/amp-ad-0.1.js",
       },
     ],
+    // <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7016841222608649" crossorigin="anonymous"></script>
+    [
+      "script",
+      {
+        async: "",
+        crossorigin: "anonymous",
+        scr: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7016841222608649",
+      },
+    ],
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
