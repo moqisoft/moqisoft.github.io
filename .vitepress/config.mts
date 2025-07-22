@@ -15,6 +15,15 @@ export default defineConfig({
       "meta",
       { name: "google-adsense-account", content: "ca-pub-7016841222608649" },
     ],
+    // <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+    [
+      "script",
+      {
+        async: "",
+        "custom-element": "amp-ad",
+        scr: "https://cdn.ampproject.org/v0/amp-ad-0.1.js",
+      },
+    ],
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
