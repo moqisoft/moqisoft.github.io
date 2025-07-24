@@ -14,14 +14,20 @@ import { ref, onMounted } from "vue";
 
 const container = ref(null);
 
-const htmlContent = `<amp-ad width="100vw" height="320"
-     type="adsense"
+// 使用字符串连接避免出现完整的 </script> 标签
+const htmlContent = `
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7016841222608649"
+     crossorigin="anonymous"></` + `script>
+<!-- 豆腐块 -->
+<ins class="adsbygoogle"
+     style="display:block"
      data-ad-client="ca-pub-7016841222608649"
      data-ad-slot="7278406904"
-     data-auto-format="rspv"
-     data-full-width="">
-  <div overflow=""></div>
-</amp-ad>`;
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</` + `script>`;
 
 onMounted(() => {
   if (container.value) {
