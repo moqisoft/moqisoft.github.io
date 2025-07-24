@@ -14,3 +14,5 @@
 ## 作者 QQ
 
 ![qq](/images/qq.png)
+
+<FeedsAds />

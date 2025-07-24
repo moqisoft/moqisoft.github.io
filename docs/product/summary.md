@@ -1,5 +1,7 @@
 # documentserver 中国版
 
+<FeedsAds />
+
 基于社区版最新源码编译，增加以下功能：
 
 - 移除人数限制
