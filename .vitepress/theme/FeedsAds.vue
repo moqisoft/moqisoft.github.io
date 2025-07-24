@@ -1,15 +1,14 @@
 <template>
   <div class="custom-content" ref="container">
-    <!-- 豆腐块 -->
-    <ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-7016841222608649" data-ad-slot="7278406904"
-      data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article"
+      data-ad-format="fluid" data-ad-client="ca-pub-7016841222608649" data-ad-slot="8265019661"></ins>
   </div>
 </template>
 
 <style scoped>
 .custom-content {
-  font-size: 14px;
-  line-height: 1.6;
+  /* font-size: 14px;
+  line-height: 1.6; */
 }
 </style>
 

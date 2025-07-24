@@ -33,6 +33,8 @@
 > [!IMPORTANT]
 > 目前高级版支持免费 60 天试用，详情请加QQ群咨询
 
+<FeedsAds />
+
 ## 上传 license 文件
 
 上传获得的 `license.lic` 文件至 `/var/www/onlyoffice/Data` 的挂载目录，此时容器内会自动加载文件。如果不生效可重启一次容器。

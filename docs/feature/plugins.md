@@ -22,6 +22,8 @@ docker run -itd \
     moqisoft/documentserver:latest
 ```
 
+<FeedsAds />
+
 ## 上传插件
 
 将符合规范的插件包上传至 `/var/www/onlyoffice/documentserver/sdkjs-plugins` 挂载的宿主机目录，重启容器，即可在 toolbar 的插件选项卡下显示

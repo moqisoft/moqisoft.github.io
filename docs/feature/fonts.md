@@ -21,6 +21,8 @@ docker run -itd \
 ![完整替换](/images/font1.png)
 
 
+<FeedsAds />
+
 ## 追加部分字体
 
 将容器的 `/usr/share/fonts/truetype/custom` 目录挂载到宿主机，将需要的字体放进宿主机目录，启动容器即可生效

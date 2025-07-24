@@ -3,6 +3,8 @@
 > [!TIP]
 > 该功能为高级版功能，如有需要请联系交流群（183026419）管理员
 
+<FeedsAds />
+
 Connector 是一个允许从外部源编辑文本文档、电子表格、演示文稿、PDF 和可填写表单的类。一般用于和自己的各类业务系统做集成，通过自动化 API 方式修改文档，能力较金山文档的 JSSDK 等强大很多。
 
 [点击查看 WPS SDK 官方文档](https://solution.wps.cn/docs/client/api/summary.html)  

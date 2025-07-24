@@ -5,6 +5,7 @@ import { useRoute, inBrowser } from "vitepress";
 import "./custom.css";
 import Layout from "./Layout.vue";
 import SiderAds from "./SiderAds.vue";
+import FeedsAds from "./FeedsAds.vue";
 
 export default {
   ...DefaultTheme,
@@ -12,6 +13,7 @@ export default {
   enhanceApp({ app }) {
     // 注册全局组件
     app.component("SiderAds", SiderAds);
+    app.component("FeedsAds", FeedsAds);
   },
   setup() {
     const route = useRoute();
