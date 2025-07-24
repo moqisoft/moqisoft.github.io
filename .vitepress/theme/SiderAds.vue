@@ -16,10 +16,21 @@
 <script>
 export default {
   mounted() {
-    // 确保广告脚本已加载
-    if (typeof window !== 'undefined' && window.adsbygoogle) {
-      (window.adsbygoogle = window.adsbygoogle || []).push({})
+    // 确保只在客户端执行
+    if (typeof window !== 'undefined') {
+      // 动态创建脚本标签
+      const script = document.createElement('script')
+      script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7016841222608649'
+      script.async = true
+      script.crossOrigin = 'anonymous'
+      document.head.appendChild(script)
+
+      // 延迟执行广告初始化
+      script.onload = () => {
+        (window.adsbygoogle = window.adsbygoogle || []).push({})
+      }
     }
+
   }
 }
 </script>
