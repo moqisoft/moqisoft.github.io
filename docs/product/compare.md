@@ -18,7 +18,7 @@
 | [防截图水印](../feature/watermark.md)           | √      | √      |
 | [内部剪切板](../feature/copyout.md)             | √      | √      |
 
-<FeedsAds />
+
 
 > [!TIP]
 > 各版本功能不断增加中，具体可加QQ群（群号：183026419）关注消息通知

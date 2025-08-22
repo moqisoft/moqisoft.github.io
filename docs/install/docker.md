@@ -6,7 +6,7 @@
 ```bash
 docker pull moqisoft/documentserver:latest
 ```
-<FeedsAds />
+
 
 #### 阿里云
 AMD64

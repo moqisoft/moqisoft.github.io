@@ -2,8 +2,9 @@
 
 ## 承接项目（收费）
 
-- onlyoffice 功能定制
-- 源码编译技术咨询
+- documentserver 功能定制（可源码）
+- documentserver 镜像定制
+- 插件定制开发
 
 ## QQ 群
 
@@ -15,4 +16,3 @@
 
 ![qq](/images/qq.png)
 
-<FeedsAds />

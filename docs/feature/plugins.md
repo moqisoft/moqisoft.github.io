@@ -22,7 +22,7 @@ docker run -itd \
     moqisoft/documentserver:latest
 ```
 
-<FeedsAds />
+
 
 ## 上传插件
 
@@ -31,6 +31,6 @@ docker run -itd \
 ![上传插件](/images/plugins.png)
 
 
-官方提供了大量的插件示例，可以参考 https://api.onlyoffice.com/docs/plugin-and-macros/tutorials/samples/
+官方提供了大量的插件示例，可以参考 https://api.onlyoffice.com/docs/plugin-and-macros/samples/plugin-samples/
 
-如果你有插件定制需求，也可联系作者QQ（327654929）。
+如果你有插件定制需求，也可联系QQ（327654929）。

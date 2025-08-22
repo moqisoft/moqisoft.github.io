@@ -33,7 +33,7 @@
 > [!IMPORTANT]
 > 目前高级版支持免费 60 天试用，详情请加QQ群咨询
 
-<FeedsAds />
+
 
 ## 上传 license 文件
 
