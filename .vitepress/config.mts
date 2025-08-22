@@ -16,13 +16,13 @@ export default defineConfig({
       { name: "google-adsense-account", content: "ca-pub-7016841222608649" },
     ],
     // <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7016841222608649" crossorigin="anonymous"></script>
-    [
-      "script",
-      {
-        crossorigin: "anonymous",
-        scr: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7016841222608649",
-      },
-    ],
+    // [
+    //   "script",
+    //   {
+    //     crossorigin: "anonymous",
+    //     scr: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7016841222608649",
+    //   },
+    // ],
     /*
     <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
     <script>LA.init({id:"3Mu7syjTXsfG3ju1",ck:"3Mu7syjTXsfG3ju1"})</script>
