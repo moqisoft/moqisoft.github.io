@@ -3,10 +3,14 @@
 ## 拉取镜像
 
 #### docker hub
+AMD64
 ```bash
-docker pull moqisoft/documentserver:latest
+docker pull moqisoft/documentserver:9.0.4-amd64
 ```
-
+ARM64
+```bash
+docker pull moqisoft/documentserver:9.0.2-arm64
+```
 
 #### 阿里云
 AMD64
