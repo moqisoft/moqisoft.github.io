@@ -82,3 +82,8 @@ html {
 .ant-tag-close:hover {
   opacity: 1;
 }
+
+.vp-doc [class*='language-'] code {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
