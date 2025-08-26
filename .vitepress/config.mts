@@ -15,6 +15,10 @@ export default defineConfig({
       "meta",
       { name: "google-adsense-account", content: "ca-pub-7016841222608649" },
     ],
+    [
+      "meta",
+      { name: "baidu-site-verification", content: "codeva-rt8FUjktiP" },
+    ],
     // <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7016841222608649" crossorigin="anonymous"></script>
     // [
     //   "script",
