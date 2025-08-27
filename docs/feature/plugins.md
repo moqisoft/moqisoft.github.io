@@ -1,5 +1,10 @@
 # 安装本地插件
 
+> [!IMPORTANT]
+> 考虑到国网络内环境，中国版默认删除了官方自带的所有插件。如果需要原版插件，请按下方挂载目录后下载解压覆盖并重启容器。
+
+[下载官方默认插件](../../public/sdkjs-plugins.zip)
+
 ## 开启插件
 
 ```js
@@ -21,8 +26,6 @@ docker run -itd \
     # 其它配置项...
     moqisoft/documentserver:latest
 ```
-
-
 
 ## 上传插件
 
