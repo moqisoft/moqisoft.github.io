@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文档服务中国版</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f5f5f5;
+            height: 100vh;
+        }
+
+        .header {
+            background-color: white;
+            border-bottom: 1px solid #e1e5e9;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .back-to-home-button {
+            padding: 6px 12px;
+            border: 1px solid #0078d4;
+            border-radius: 4px;
+            background-color: #0078d4;
+            color: white;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-left: 16px;
+        }
+
+        .back-to-home-button:hover {
+            background-color: #106ebe;
+            border-color: #106ebe;
+        }
+
+        .logo {
+            width: 32px;
+            height: 32px;
+            background-color: #0078d4;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #323130;
+        }
+
+        .actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .action-button {
+            padding: 8px 16px;
+            border: 1px solid #d1d1d1;
+            border-radius: 4px;
+            background-color: white;
+            color: #323130;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .action-button:hover {
+            background-color: #f3f2f1;
+            border-color: #c7c7c7;
+        }
+
+        .action-button:active {
+            background-color: #edebe9;
+        }
+
+        .primary-button {
+            background-color: #0078d4;
+            color: white;
+            border-color: #0078d4;
+        }
+
+        .primary-button:hover {
+            background-color: #106ebe;
+            border-color: #106ebe;
+        }
+
+        .main-content {
+            padding: 40px 24px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            min-height: calc(100vh - 200px);
+        }
+
+        .welcome-text {
+            font-size: 24px;
+            color: #323130;
+            margin-bottom: 16px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #605e5c;
+            margin-bottom: 32px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 1200px) {
+            .feature-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .feature-card {
+            background: white;
+            padding: 24px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 16px;
+            background-color: #0078d4;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        .feature-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #323130;
+            margin-bottom: 8px;
+        }
+
+        .feature-desc {
+            font-size: 14px;
+            color: #605e5c;
+            line-height: 1.4;
+        }
+
+        .action-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+            margin-top: 40px;
+            height: calc(100vh - 300px);
+            min-height: 500px;
+        }
+
+        .back-button {
+            padding: 12px 24px;
+            border: 1px solid #0078d4;
+            border-radius: 4px;
+            background-color: #0078d4;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .back-button:hover {
+            background-color: #106ebe;
+            border-color: #106ebe;
+        }
+
+        .content-placeholder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            padding: 60px 40px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .placeholder-icon {
+            font-size: 48px;
+            opacity: 0.6;
+        }
+
+        .placeholder-text {
+            font-size: 16px;
+            color: #605e5c;
+            margin: 0;
+        }
+
+        .error-message {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .error-icon {
+            font-size: 48px;
+        }
+
+        .error-text {
+            font-size: 16px;
+            color: #d13438;
+            margin: 0;
+        }
+
+        .retry-button {
+            padding: 8px 16px;
+            border: 1px solid #d13438;
+            border-radius: 4px;
+            background-color: #d13438;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .retry-button:hover {
+            background-color: #a4262c;
+            border-color: #a4262c;
+        }
+
+        #office-editor {
+            width: 100%;
+            min-height: 600px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            backdrop-filter: blur(2px);
+        }
+
+        .loading-content {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+        }
+
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid #f3f2f1;
+            border-top: 4px solid #0078d4;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .loading-text {
+            font-size: 18px;
+            color: #323130;
+            margin-bottom: 8px;
+        }
+
+        .loading-subtitle {
+            font-size: 14px;
+            color: #605e5c;
+        }
+    </style>
+    <script src="https://ds-demo.moqisoft.com/web-apps/apps/api/documents/api.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-section">
+            <div class="logo">W</div>
+            <div class="title">文档服务中国版</div>
+            <button class="back-to-home-button" onclick="if(window.officeManager) window.officeManager.restoreMainContent()" style="display: none;">返回首页</button>
+        </div>
+        <div class="actions">
+            <button class="action-button">上传文档并打开</button>
+            <button class="action-button">新建 Word</button>
+            <button class="action-button">新建 Excel</button>
+            <button class="action-button">新建 PowerPoint</button>
+            <button class="action-button">新建 PDF</button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <h1 class="welcome-text">欢迎使用文档服务中国版</h1>
+        <p class="subtitle">在浏览器中创建、编辑和协作处理文档</p>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📄</div>
+                <div class="feature-title">Word 文档</div>
+                <div class="feature-desc">创建和编辑专业的文档，支持丰富的格式和协作功能</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <div class="feature-title">Excel 表格</div>
+                <div class="feature-desc">处理数据、创建图表和进行复杂的计算分析</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <div class="feature-title">PowerPoint 演示</div>
+                <div class="feature-desc">制作精美的演示文稿，展示您的想法和项目</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📝</div>
+                <div class="feature-title">PDF 文档</div>
+                <div class="feature-desc">创建和编辑 PDF 文档，支持文本、图片和表单等元素</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="office.js"></script>
+    <script>
+        // 调试脚本，确保 JS 正常加载
+        console.log('页面脚本开始执行');
+        
+        // 等待页面加载完成
+        window.addEventListener('load', function() {
+            console.log('页面完全加载完成');
+            console.log('OfficeManager 类是否存在:', typeof OfficeManager);
+            console.log('officeManager 实例是否存在:', typeof window.officeManager);
+            
+            // 确保实例可用
+            if (typeof window.ensureOfficeManager === 'function') {
+                window.ensureOfficeManager();
+            } else if (typeof window.officeManager === 'undefined' || !window.officeManager) {
+                console.log('手动创建 OfficeManager 实例');
+                if (typeof OfficeManager !== 'undefined') {
+                    window.officeManager = new OfficeManager();
+                    console.log('手动创建完成');
+                } else {
+                    console.error('OfficeManager 类不存在');
+                }
+            }
+        });
+        
+        // 备用事件绑定（如果主要方式失效）
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('action-button')) {
+                console.log('备用事件触发:', e.target.textContent);
+                
+                // 多重保障机制
+                let manager = window.officeManager;
+                
+                // 如果实例不存在，尝试重新创建
+                if (!manager && typeof window.ensureOfficeManager === 'function') {
+                    manager = window.ensureOfficeManager();
+                }
+                
+                // 最后一道防线：手动创建
+                if (!manager && typeof OfficeManager !== 'undefined') {
+                    console.log('备用机制：手动创建 OfficeManager');
+                    manager = new OfficeManager();
+                    window.officeManager = manager;
+                }
+                
+                if (manager && typeof manager.handleButtonClick === 'function') {
+                    e.preventDefault();
+                    manager.handleButtonClick(e.target.textContent);
+                } else {
+                    console.error('OfficeManager 实例不可用或缺少 handleButtonClick 方法');
+                    console.log('当前 manager:', manager);
+                    console.log('manager 类型:', typeof manager);
+                    if (manager) {
+                        console.log('manager 方法:', Object.getOwnPropertyNames(Object.getPrototypeOf(manager)));
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
