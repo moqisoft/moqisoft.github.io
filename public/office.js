@@ -150,10 +150,18 @@ class OfficeManager {
         this.currentDocumentType = config.type;
         
         console.log('开始创建文档:', config.title);
-        this.replaceMainContent(config.title, config.subtitle);
+        
+        // 显示 loading 蒙层
+        this.showLoadingOverlay(config.title, config.subtitle);
         
         // 延迟加载编辑器，模拟创建过程
         setTimeout(() => {
+            // 隐藏 loading 蒙层
+            this.hideLoadingOverlay();
+            
+            // 替换主内容
+            this.replaceMainContent(config.title, '文档编辑器已加载完成');
+            
             // 为新建文档提供默认的空白文档模板
             const defaultUrls = {
                 'word': 'https://moqisoft.github.io/assets/blank.docx',
@@ -188,8 +196,10 @@ class OfficeManager {
         switch(type) {
             case 'word':
                 console.log('开始加载 Word 示例文档');
-                this.replaceMainContent('Word 文档', '正在加载 Word 查看器...');
+                this.showLoadingOverlay('Word 文档', '正在加载 Word 查看器...');
                 setTimeout(() => {
+                    this.hideLoadingOverlay();
+                    this.replaceMainContent('Word 文档', '文档查看器已加载完成');
                     this.loadEditor({
                         documentType: 'word',
                         mode: 'view',
@@ -201,8 +211,10 @@ class OfficeManager {
                 
             case 'excel':
                 console.log('开始加载 Excel 示例文档');
-                this.replaceMainContent('Excel 表格', '正在加载 Excel 查看器...');
+                this.showLoadingOverlay('Excel 表格', '正在加载 Excel 查看器...');
                 setTimeout(() => {
+                    this.hideLoadingOverlay();
+                    this.replaceMainContent('Excel 表格', '文档查看器已加载完成');
                     this.loadEditor({
                         documentType: 'cell',
                         mode: 'view',
@@ -215,8 +227,10 @@ class OfficeManager {
             case 'ppt':
             case 'powerpoint':
                 console.log('开始加载 PowerPoint 示例文档');
-                this.replaceMainContent('PowerPoint 演示', '正在加载 PowerPoint 查看器...');
+                this.showLoadingOverlay('PowerPoint 演示', '正在加载 PowerPoint 查看器...');
                 setTimeout(() => {
+                    this.hideLoadingOverlay();
+                    this.replaceMainContent('PowerPoint 演示', '文档查看器已加载完成');
                     this.loadEditor({
                         documentType: 'slide',
                         mode: 'view',
@@ -228,8 +242,10 @@ class OfficeManager {
                 
             case 'pdf':
                 console.log('开始加载 PDF 文档');
-                this.replaceMainContent('PDF 文档', '正在加载 PDF 查看器...');
+                this.showLoadingOverlay('PDF 文档', '正在加载 PDF 查看器...');
                 setTimeout(() => {
+                    this.hideLoadingOverlay();
+                    this.replaceMainContent('PDF 文档', '文档查看器已加载完成');
                     this.loadEditor({
                         documentType: 'pdf',
                         mode: 'view',
@@ -465,6 +481,36 @@ class OfficeManager {
     }
 
     /**
+     * 显示 loading 蒙层
+     */
+    showLoadingOverlay(title, subtitle) {
+        // 移除已存在的 loading 蒙层
+        this.hideLoadingOverlay();
+        
+        const overlay = document.createElement('div');
+        overlay.className = 'loading-overlay';
+        overlay.innerHTML = `
+            <div class="loading-content">
+                <div class="loading-spinner"></div>
+                <div class="loading-text">${title}</div>
+                <div class="loading-subtitle">${subtitle}</div>
+            </div>
+        `;
+        
+        document.body.appendChild(overlay);
+    }
+
+    /**
+     * 隐藏 loading 蒙层
+     */
+    hideLoadingOverlay() {
+        const overlay = document.querySelector('.loading-overlay');
+        if (overlay) {
+            overlay.remove();
+        }
+    }
+
+    /**
      * 替换主内容区域
      */
     replaceMainContent(title, subtitle) {
@@ -494,6 +540,12 @@ class OfficeManager {
      */
     restoreMainContent() {
         console.log('恢复主内容到首页');
+        
+        // 隐藏返回首页按钮
+        const backButton = document.querySelector('.back-to-home-button');
+        if (backButton) {
+            backButton.style.display = 'none';
+        }
         
         // 清理编辑器实例
         if (this.documentApi) {
