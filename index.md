@@ -9,7 +9,8 @@ hero:
   actions:
     - theme: brand
       text: 在线体验
-      link: /example
+      link: /example.html
+      target: _blank
     - theme: alt
       text: 产品介绍
       link: /docs/product/summary

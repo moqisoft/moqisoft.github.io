@@ -52,7 +52,7 @@ export default defineConfig({
     nav: [
       { text: "首页", link: "/" },
       { text: "产品介绍", link: "/docs/product/summary" },
-      { text: "在线体验", link: "/example" },
+      { text: "在线体验", link: "/example.html", target: "_blank" },
       { text: "联系我们", link: "/docs/product/about" },
     ],
 
