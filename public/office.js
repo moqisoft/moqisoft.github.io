@@ -28,7 +28,7 @@ class OfficeManager {
             console.log('正在绑定按钮事件...');
             const buttons = document.querySelectorAll('.action-button');
             console.log('找到按钮数量:', buttons.length);
-            
+
             buttons.forEach((button, index) => {
                 console.log(`绑定第${index + 1}个按钮:`, button.textContent);
                 button.addEventListener('click', (e) => {
@@ -54,7 +54,7 @@ class OfficeManager {
      */
     handleButtonClick(action) {
         console.log('处理按钮点击:', action);
-        switch(action) {
+        switch (action) {
             case '上传文档并打开':
                 console.log('执行上传文档功能');
                 this.showUploadPage();
@@ -106,7 +106,7 @@ class OfficeManager {
             console.log('正在创建或加载中，忽略上传请求');
             return;
         }
-        
+
         console.log('显示上传页面');
         this.replaceMainContent('上传文档并打开', '选择您要查看和编辑的文档文件');
         // 这里可以添加文件上传逻辑
@@ -125,13 +125,13 @@ class OfficeManager {
      */
     createNewDocument(documentType) {
         console.log('请求创建文档类型:', documentType);
-        
+
         // 检查是否已经在创建或加载中
         if (this.isCreating || this.isLoading) {
             console.log('正在创建或加载中，忽略重复请求');
             return;
         }
-        
+
         const typeMap = {
             'word': { title: 'Word 文档', subtitle: '正在创建新的 Word 文档...', type: 'word' },
             'cell': { title: 'Excel 表格', subtitle: '正在创建新的 Excel 表格...', type: 'cell' },
@@ -148,20 +148,20 @@ class OfficeManager {
         // 设置创建状态
         this.isCreating = true;
         this.currentDocumentType = config.type;
-        
+
         console.log('开始创建文档:', config.title);
-        
+
         // 显示 loading 蒙层
         this.showLoadingOverlay(config.title, config.subtitle);
-        
+
         // 延迟加载编辑器，模拟创建过程
         setTimeout(() => {
             // 隐藏 loading 蒙层
             this.hideLoadingOverlay();
-            
+
             // 替换主内容
             this.replaceMainContent(config.title, '文档编辑器已加载完成');
-            
+
             // 为新建文档提供默认的空白文档模板
             const defaultUrls = {
                 'word': 'https://moqisoft.github.io/assets/blank.docx',
@@ -169,7 +169,7 @@ class OfficeManager {
                 'slide': 'https://moqisoft.github.io/assets/blank.pptx',
                 'pdf': 'https://moqisoft.github.io/assets/blank.pdf'
             };
-            
+
             this.loadEditor({
                 documentType: config.type,
                 mode: 'edit',
@@ -189,11 +189,11 @@ class OfficeManager {
             console.log('正在创建或加载中，忽略查看请求');
             return;
         }
-        
+
         // 设置加载状态
         this.isLoading = true;
-        
-        switch(type) {
+
+        switch (type) {
             case 'word':
                 console.log('开始加载 Word 示例文档');
                 this.showLoadingOverlay('Word 文档', '正在加载 Word 查看器...');
@@ -208,7 +208,7 @@ class OfficeManager {
                     });
                 }, 1000);
                 break;
-                
+
             case 'excel':
                 console.log('开始加载 Excel 示例文档');
                 this.showLoadingOverlay('Excel 表格', '正在加载 Excel 查看器...');
@@ -223,7 +223,7 @@ class OfficeManager {
                     });
                 }, 1000);
                 break;
-                
+
             case 'ppt':
             case 'powerpoint':
                 console.log('开始加载 PowerPoint 示例文档');
@@ -239,7 +239,7 @@ class OfficeManager {
                     });
                 }, 1000);
                 break;
-                
+
             case 'pdf':
                 console.log('开始加载 PDF 文档');
                 this.showLoadingOverlay('PDF 文档', '正在加载 PDF 查看器...');
@@ -254,13 +254,26 @@ class OfficeManager {
                     });
                 }, 1000);
                 break;
-                
+
             default:
                 console.error('不支持的文档类型:', type);
                 this.isLoading = false;
                 this.showError('不支持的文档类型: ' + type);
                 break;
         }
+    }
+
+    /**
+     * 检测设备类型
+     */
+    detectDeviceType() {
+        const userAgent = navigator.userAgent.toLowerCase();
+        const isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+        const isTablet = /ipad|android(?!.*mobile)/i.test(userAgent);
+        const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+        
+        // 综合判断：移动设备或小屏幕设备使用mobile模式
+        return (isMobile || isTablet || isTouchDevice || window.innerWidth <= 768) ? 'mobile' : 'desktop';
     }
 
     /**
@@ -298,12 +311,31 @@ class OfficeManager {
         // 清空容器并设置ID
         editorContainer.innerHTML = '';
         editorContainer.id = 'office-editor';
+        
+        // 等待下一个渲染帧再获取尺寸，确保容器已经完全渲染
+        requestAnimationFrame(() => {
+            this.initializeEditor(editorContainer, options, mode, documentType, title, url, isNew, fileType);
+        });
+    }
+    
+    /**
+     * 初始化编辑器（在容器渲染完成后调用）
+     */
+    initializeEditor(editorContainer, options, mode, documentType, title, url, isNew, fileType) {
+        // 计算容器的实际高度（像素值）
+        const containerHeight = editorContainer.offsetHeight || editorContainer.clientHeight || 600;
+        const containerWidth = editorContainer.offsetWidth || editorContainer.clientWidth || 800;
+        
+        console.log('编辑器容器尺寸:', { width: containerWidth, height: containerHeight });
 
+        // 自动检测设备类型
+        const deviceType = this.detectDeviceType();
+        
         // OnlyOffice 配置
         const config = {
-            "width": "100%",
-            "height": "100%",
-            "type": mode === 'view' ? 'view' : 'desktop',
+            "width": containerWidth + "px",
+            "height": containerHeight + "px",
+            "type": mode === 'view' ? 'view' : deviceType,
             "documentType": documentType,
             "document": {
                 "fileType": fileType || this.getFileTypeFromUrl(url) || this.getDefaultFileType(documentType),
@@ -314,7 +346,7 @@ class OfficeManager {
                     "chat": true,
                     "comment": true,
                     "copy": true,
-                    "copyOut": true,
+                    "copyOut": false,
                     "download": true,
                     "edit": mode === 'edit',
                     "fillForms": true,
@@ -341,7 +373,7 @@ class OfficeManager {
                     "forcesave": true,
                     "goback": {
                         "blank": false,
-                        "url": "https://moqisoft.github.io/"
+                        "url": "https://onlyoffice.moqisoft.com/"
                     },
                     "help": false,
                     "submitForm": true,
@@ -351,9 +383,19 @@ class OfficeManager {
                     },
                     "waterMark": {
                         "value": "文档服务中国版\\nQQ群：183026419",
-                        "fillstyle": "#000000",
+                        "fillstyle": "#f00",
                         "opacity": 0.3
-                    }
+                    },
+                    "mobile": {
+                        "forceView": deviceType === 'mobile' && mode === 'edit' ? false : true,
+                        "showEditingOptionsInView": true
+                    },
+                    "compactHeader": deviceType === 'mobile',
+                    "toolbarNoTabs": deviceType === 'mobile',
+                    "logo": {
+                        "visible": true,
+                    },
+                    "about": false
                 },
                 "user": {
                     "group": "",
@@ -486,7 +528,7 @@ class OfficeManager {
     showLoadingOverlay(title, subtitle) {
         // 移除已存在的 loading 蒙层
         this.hideLoadingOverlay();
-        
+
         const overlay = document.createElement('div');
         overlay.className = 'loading-overlay';
         overlay.innerHTML = `
@@ -496,7 +538,7 @@ class OfficeManager {
                 <div class="loading-subtitle">${subtitle}</div>
             </div>
         `;
-        
+
         document.body.appendChild(overlay);
     }
 
@@ -524,8 +566,6 @@ class OfficeManager {
         }
 
         mainContent.innerHTML = `
-            <h1 class="welcome-text">${title}</h1>
-            <p class="subtitle">${subtitle}</p>
             <div class="action-area">
                 <div class="content-placeholder">
                     <div class="placeholder-icon">📄</div>
@@ -540,13 +580,13 @@ class OfficeManager {
      */
     restoreMainContent() {
         console.log('恢复主内容到首页');
-        
+
         // 隐藏返回首页按钮
         const backButton = document.querySelector('.back-to-home-button');
         if (backButton) {
             backButton.style.display = 'none';
         }
-        
+
         // 清理编辑器实例
         if (this.documentApi) {
             this.documentApi.destroyEditor();
@@ -563,9 +603,10 @@ class OfficeManager {
         if (!mainContent) return;
 
         mainContent.innerHTML = `
-            <h1 class="welcome-text">欢迎使用文档服务中国版</h1>
-            <p class="subtitle">在浏览器中创建、编辑和协作处理文档</p>
-            
+            <div class="welcome-section">
+                <h1 class="welcome-text">欢迎使用文档服务中国版</h1>
+                <p class="subtitle">在浏览器中创建、编辑和协作处理文档</p>
+            </div>
             <div class="feature-grid">
                 <div class="feature-card">
                     <div class="feature-icon">📄</div>
