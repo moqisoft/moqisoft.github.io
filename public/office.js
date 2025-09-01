@@ -271,7 +271,7 @@ class OfficeManager {
         const isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
         const isTablet = /ipad|android(?!.*mobile)/i.test(userAgent);
         const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-        
+
         // 综合判断：移动设备或小屏幕设备使用mobile模式
         return (isMobile || isTablet || isTouchDevice || window.innerWidth <= 768) ? 'mobile' : 'desktop';
     }
@@ -311,13 +311,13 @@ class OfficeManager {
         // 清空容器并设置ID
         editorContainer.innerHTML = '';
         editorContainer.id = 'office-editor';
-        
+
         // 等待下一个渲染帧再获取尺寸，确保容器已经完全渲染
         requestAnimationFrame(() => {
             this.initializeEditor(editorContainer, options, mode, documentType, title, url, isNew, fileType);
         });
     }
-    
+
     /**
      * 初始化编辑器（在容器渲染完成后调用）
      */
@@ -325,12 +325,12 @@ class OfficeManager {
         // 计算容器的实际高度（像素值）
         const containerHeight = editorContainer.offsetHeight || editorContainer.clientHeight || 600;
         const containerWidth = editorContainer.offsetWidth || editorContainer.clientWidth || 800;
-        
+
         console.log('编辑器容器尺寸:', { width: containerWidth, height: containerHeight });
 
         // 自动检测设备类型
         const deviceType = this.detectDeviceType();
-        
+
         // OnlyOffice 配置
         const config = {
             "width": containerWidth + "px",
@@ -395,7 +395,8 @@ class OfficeManager {
                     "logo": {
                         "visible": true,
                     },
-                    "about": false
+                    "about": false,
+                    "resPrefix": ["https://ds-china-files.moqisoft.com", "https://ds-china-files2.moqisoft.com", "https://ds-china-files3.moqisoft.com"]
                 },
                 "user": {
                     "group": "",
@@ -459,7 +460,7 @@ class OfficeManager {
                 }
             }
         };
-        
+
         // 创建编辑器实例
         try {
             this.documentApi = new DocsAPI.DocEditor("office-editor", config);
