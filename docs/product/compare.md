@@ -17,6 +17,7 @@
 | [ws强制降级](../feature/longpoll.md)            | ×      | √      |
 | [防截图水印](../feature/watermark.md)           | √      | √      |
 | [内部剪切板](../feature/copyout.md)             | √      | √      |
+| [访问加速](../feature/speedup.md)               | √      | √      |
 
 
 
