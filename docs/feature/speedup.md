@@ -24,3 +24,5 @@ editorConfig: {
 效果展示（三个域名同时在下载字体）
 
 ![效果展示](/images/domains.png)
+
+![效果展示](/images/domains2.png)
