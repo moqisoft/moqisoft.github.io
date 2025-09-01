@@ -82,6 +82,7 @@ export default defineConfig({
             { text: "WS降级", link: "/docs/feature/longpoll" },
             { text: "防截图水印", link: "/docs/feature/watermark" },
             { text: "内部剪切板", link: "/docs/feature/copyout" },
+            { text: "访问加速", link: "/docs/feature/speedup" },
           ],
         },
       ],
