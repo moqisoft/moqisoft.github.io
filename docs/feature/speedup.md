@@ -19,6 +19,11 @@ editorConfig: {
 
 第二步：将容器内 `fonts` 目录下的字体文件导出，分别部署到上述域名下，验证可以使用 `https://yourdomain1.com/fonts/000` 正常下载。
 
+```bash
+# 导出字体文件
+docker cp 容器名:/var/www/onlyoffice/documentserver/fonts ./fonts
+```
+
 第三步：配置字体访问允许跨域，验证文档打开及编辑是否正常。
 
 效果展示（三个域名同时在下载字体）
