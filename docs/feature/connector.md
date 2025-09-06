@@ -25,6 +25,6 @@ const connector = docEditor.createConnector();
 
 连接器具有与插件相同的接口。可以在 [插件和宏页面](https://api.onlyoffice.com/docs/plugin-and-macros/customization/context-menu/) 找到大量可用的代码示例。
 
-中国版完整实现了官方连接器的相同功能，并逐步对其能力做增强，可以轻松实现外部对文档的各类操作。
+中国版完整实现了官方连接器的相同功能，兼容官方的 JSAPI，并逐步对其能力做增强，可以轻松实现外部对文档的各类操作。
 
 ![连接器](/images/connector.png)

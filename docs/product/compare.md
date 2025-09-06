@@ -4,20 +4,20 @@
 产品版本上分为 `免费版` 和 `高级版`，镜像安装后默认为免费版，可通过购买授权方式升级为高级版。[如何获得高级版授权](../product/vip.md)
 
 
-|                                                 | 免费版 | 高级版 |
-| ----------------------------------------------- | ------ | ------ |
-| AMD64                                           | √      | √      |
-| ARM64                                           | √      | √      |
-| 连接数                                          | 无限制 | 无限制 |
-| 移动端编辑                                      | √      | √      |
-| 常用中文字体                                    | √      | √      |
-| welcome 及 example 汉化                         | √      | √      |
-| [自定义logo及品牌](../feature/customization.md) | ×      | √      |
-| [连接器](../feature/connector.md)               | ×      | √      |
-| [ws强制降级](../feature/longpoll.md)            | ×      | √      |
-| [防截图水印](../feature/watermark.md)           | √      | √      |
-| [内部剪切板](../feature/copyout.md)             | √      | √      |
-| [访问加速](../feature/speedup.md)               | √      | √      |
+|                                           | 免费版 | 高级版 |
+| ----------------------------------------- | ------ | ------ |
+| AMD64                                     | √      | √      |
+| ARM64                                     | √      | √      |
+| 连接数                                    | 无限制 | 无限制 |
+| 移动端编辑                                | √      | √      |
+| 常用中文字体                              | √      | √      |
+| welcome 及 example 汉化                   | √      | √      |
+| [个性化配置](../feature/customization.md) | ×      | √      |
+| [高级API调用](../feature/connector.md)    | ×      | √      |
+| [ws强制降级](../feature/longpoll.md)      | ×      | √      |
+| [防截图水印](../feature/watermark.md)     | √      | √      |
+| [内部剪切板](../feature/copyout.md)       | √      | √      |
+| [字体访问加速](../feature/speedup.md)     | √      | √      |
 
 
 
