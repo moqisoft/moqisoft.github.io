@@ -21,14 +21,7 @@ docker pull crpi-jfv3ro7j3i1a1bjk.cn-shanghai.personal.cr.aliyuncs.com/moqisoft/
 ARM64
 ```bash
 docker pull crpi-jfv3ro7j3i1a1bjk.cn-shanghai.personal.cr.aliyuncs.com/moqisoft/documentserver:9.0.2-arm64
-```
-
-#### 百度网盘
-
-https://pan.baidu.com/s/1nwCSvQrwdi8yrGik5A4MUQ?pwd=6666
-
-> [!TIP]
-> 如果因为网络等原因无法拉取，可加 QQ 群（183026419）获取离线版镜像        
+```     
 
 ## 启动编辑服务
 
