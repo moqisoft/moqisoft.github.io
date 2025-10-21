@@ -9,7 +9,7 @@ docker pull moqisoft/documentserver:9.1.0-amd64
 ```
 ARM64
 ```bash
-docker pull moqisoft/documentserver:9.0.2-arm64
+docker pull moqisoft/documentserver:9.1.0-arm64
 ```
 
 #### 阿里云
@@ -20,7 +20,7 @@ docker pull crpi-jfv3ro7j3i1a1bjk.cn-shanghai.personal.cr.aliyuncs.com/moqisoft/
 
 ARM64
 ```bash
-docker pull crpi-jfv3ro7j3i1a1bjk.cn-shanghai.personal.cr.aliyuncs.com/moqisoft/documentserver:9.0.2-arm64
+docker pull crpi-jfv3ro7j3i1a1bjk.cn-shanghai.personal.cr.aliyuncs.com/moqisoft/documentserver:9.1.0-arm64
 ```     
 
 ## 启动编辑服务
