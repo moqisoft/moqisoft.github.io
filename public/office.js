@@ -346,7 +346,7 @@ class OfficeManager {
                     "chat": true,
                     "comment": true,
                     "copy": true,
-                    "copyOut": false,
+                    "copyOut": true,
                     "download": true,
                     "edit": mode === 'edit',
                     "fillForms": true,
