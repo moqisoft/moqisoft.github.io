@@ -84,6 +84,7 @@ export default defineConfig({
             { text: "内部剪切板", link: "/docs/feature/copyout" },
             { text: "访问加速", link: "/docs/feature/speedup" },
             { text: "管理面板", link: "/docs/feature/adminpanel" },
+            { text: "子目录部署", link: "/docs/feature/basepath" },
           ],
         },
       ],
