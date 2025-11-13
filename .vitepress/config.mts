@@ -69,6 +69,7 @@ export default defineConfig({
             { text: "更新日志", link: "/docs/product/changelog" },
             { text: "集成示例", link: "/docs/product/example" },
             { text: "联系我们", link: "/docs/product/about" },
+            { text: "常见问题", link: "/docs/product/faq" },
           ],
         },
         {
