@@ -31,12 +31,18 @@ onlyoffice documentserver 默认开启了 jwt 认证，你如果执意开启，�
 
 不建议在 documentserver 内部部署证书开启 https。相对合理的做法是在最前端的出口服务器（nginx 一类）上部署证书并做反向代理
 
+## 部署 https 后发现存在部分 http 请求
+
+此种情况大部分出现在你做了 30x 跳转，或者你配置的 https CDN 回源的是 http 地址。CDN 上回源地址需要和源站地址一样，否则内部检测 https 协议会失败，从而返回了 http 的下载地址
+
 ## 如何子目录部署
 
 社区版并没有支持子目录部署，比如你需要将 documentserver 部署在 /editor 路径下，单纯使用 nginx 转发会发现部分接口依然不带 /editor。这会导致不能完整的部署在子目录下。
 
 中国版正在适配子目录部署，很快就会推出。
 
-## 集成后无法复制，控制台提示没有 `copy` 权限
+## 无法复制，控制台提示没有 `copy` 权限
 
 documentserver 在开档时使用参数 `document.permissions.copy` 配置控制是否允许复制。请仔细核对你的集成参数。
+
+另外，documentserver 的默认逻辑是快捷键读写的是系统剪切板内容，鼠标右键读写的是内部剪切板内容，需要注意操作习惯。
