@@ -10,7 +10,7 @@
 
 ## 查询机器码
 
-容器启动完毕后，访问 http://ip:9000 进入欢迎界面，在 `example` 新建任意文档，打开后在浏览器网络面板会看到 `/getConfig` 接口请求，查看其中的返回体，找到 `machineCode` 字段，即为当前环境的机器码。
+容器启动完毕后，访问 http://ip:9000 可以进入欢迎界面则说明启动正常。访问 `http://ip:9000/getConfig` 查看其中的返回体，找到 `machineCode` 字段，即为当前环境的机器码。
 
 ![查询机器码](/images/machineCode.png)
 
