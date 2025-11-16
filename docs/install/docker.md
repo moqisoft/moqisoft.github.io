@@ -31,7 +31,7 @@ docker run -itd \
     -p 9000:80 \  
     -p 9090:8000 \  
     --restart=always \  
-    --privileged \  # 高级版必
+    --privileged \  # 高级版必须，某些情况下启动报错也需要传递该参数
     -e ALLOW_PRIVATE_IP_ADDRESS=true \  
     -e JWT_ENABLED=false \  
     -v /host/path/to/Data:/var/www/onlyoffice/Data \  # 高级版必须   
