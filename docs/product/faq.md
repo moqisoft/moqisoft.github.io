@@ -37,9 +37,7 @@ onlyoffice documentserver 默认开启了 jwt 认证，你如果执意开启，�
 
 ## 如何子目录部署
 
-社区版并没有支持子目录部署，比如你需要将 documentserver 部署在 /editor 路径下，单纯使用 nginx 转发会发现部分接口依然不带 /editor。这会导致不能完整的部署在子目录下。
-
-中国版正在适配子目录部署，很快就会推出。
+中国版已经适配子目录部署，具体见 [子目录部署](../feature/basepath.md)。
 
 ## 无法复制，控制台提示没有 `copy` 权限
 
