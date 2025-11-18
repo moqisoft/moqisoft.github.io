@@ -5,7 +5,7 @@
 #### docker hub
 AMD64
 ```bash
-docker pull moqisoft/documentserver:9.1.01-amd64
+docker pull moqisoft/documentserver:9.1.02-amd64
 ```
 ARM64
 ```bash
@@ -15,7 +15,7 @@ docker pull moqisoft/documentserver:9.1.01-arm64
 #### 阿里云
 AMD64
 ```bash
-docker pull crpi-jfv3ro7j3i1a1bjk.cn-shanghai.personal.cr.aliyuncs.com/moqisoft/documentserver:9.1.01-amd64
+docker pull crpi-jfv3ro7j3i1a1bjk.cn-shanghai.personal.cr.aliyuncs.com/moqisoft/documentserver:9.1.02-amd64
 ```
 
 ARM64
