@@ -9,7 +9,7 @@ docker pull moqisoft/documentserver:9.1.02-amd64
 ```
 ARM64
 ```bash
-docker pull moqisoft/documentserver:9.1.01-arm64
+docker pull moqisoft/documentserver:9.1.02-arm64
 ```
 
 #### 阿里云
@@ -20,7 +20,7 @@ docker pull crpi-jfv3ro7j3i1a1bjk.cn-shanghai.personal.cr.aliyuncs.com/moqisoft/
 
 ARM64
 ```bash
-docker pull crpi-jfv3ro7j3i1a1bjk.cn-shanghai.personal.cr.aliyuncs.com/moqisoft/documentserver:9.1.01-arm64
+docker pull crpi-jfv3ro7j3i1a1bjk.cn-shanghai.personal.cr.aliyuncs.com/moqisoft/documentserver:9.1.02-arm64
 ```     
 
 ## 启动编辑服务
@@ -39,7 +39,7 @@ docker run -itd \
     -v /host/path/to/sdkjs-plugins:/var/www/onlyoffice/documentserver/sdkjs-plugins \ 
     -v /proc/cpuinfo:/host/proc/cpuinfo \  # 高级版必须
     -v /sys/class:/host/sys/class \  # 高级版必须
-    moqisoft/documentserver:9.1.01-amd64
+    moqisoft/documentserver:9.1.02-amd64
 ```
 
 ## 启动 example
