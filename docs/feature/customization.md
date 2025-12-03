@@ -1,4 +1,4 @@
-# 个性化配置 <span class="ant-tag">高级版支持</span>
+# 个性化配置
 
 对编辑器的个性化配置全部在 `editorConfig.customization` 对象内
 
