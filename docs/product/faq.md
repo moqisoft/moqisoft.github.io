@@ -52,7 +52,7 @@ documentserver 在开档时使用参数 `document.permissions.copy` 配置控制
 - `document.key` 就相当于你正在编辑的文件内容的版本号，新开文档时设置 `key0` 对应版本`v0`，即初始版本
 - 编辑服务会下载原始文档 `example.docx` 转换为中间格式 `Editor.bin`，浏览器会加载此中间文件，做解析渲染
 - 不同的终端使用同一个`key0`进入，会进入协同编辑状态，此时大家修改的是 `Editor.bin` 文件。此时 callback 接口会收到 `status=1` 的回调通知
-- 在开启强制保存并手动保存，或者所有终端退出编辑时，编辑服务会在一段时间（0 至几秒钟）之后，生成类似 `key0_1234` 的版本目录 ，并在其中生成 `changes.zip` 和 `output.docx`，然后触发 `status=6` 或者`status=2` 的回调
+- 在开启强制保存并手动保存，或者所有终端退出编辑时，编辑服务会在一段时间（0 至几秒钟）之后，生成类似 `key0_1234` 的版本目录 ，并在其中生成 `changes.zip` 和 `output.docx`，然后触发 `status=6` 或者`status=2` 的回调。详细回调报文见 [Callback handler](https://api.onlyoffice.com/docs/docs-api/usage-api/callback-handler/)
 - 此时需要在回调接口中下载最新的 `output.docx` 并覆盖原始文档 `example.docx`，以便下一轮编辑使用
 - 注意下一轮重新打开并编辑需要使用不同的 key，如 `key1` 对应新的原始文档，否则会直接打开已经存在的缓存文件
 - 以上缓存文件都保存在 `/var/lib/onlyoffice/documentserver/App_Data` 下，可自行验证
