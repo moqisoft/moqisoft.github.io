@@ -16,8 +16,9 @@
 | [ws 强制降级](../feature/longpoll.md)     | ×      | √      |
 | [防截图水印](../feature/watermark.md)     | √      | √      |
 | [内部剪切板](../feature/copyout.md)       | √      | √      |
-| [字体访问加速](../feature/speedup.md)     | √      | √      |
+| [访问加速](../feature/speedup.md)         | √      | √      |
 | [子目录部署](../feature/basepath.md)      | √      | √      |
+| [用户只读模式](../feature/readonly.md)    | ×      | √      |
 
 > [!TIP]
 > 各版本功能不断增加中，具体可加 QQ 群（群号：183026419）关注消息通知

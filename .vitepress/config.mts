@@ -74,6 +74,7 @@ export default defineConfig({
             { text: "访问加速", link: "/docs/feature/speedup" },
             { text: "管理面板", link: "/docs/feature/adminpanel" },
             { text: "子目录部署", link: "/docs/feature/basepath" },
+            { text: "用户只读模式", link: "/docs/feature/readonly" },
           ],
         },
       ],

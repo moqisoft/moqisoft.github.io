@@ -7,15 +7,13 @@
 
 此时可以使用中国版提供的强制降级能力，切换为长轮询，上层业务无感知。
 
-
-
 ## 开启功能
 
-```js
-editorConfig: {
-    customization: {
+```json
+"editorConfig": {
+    "customization": {
         // 将Websocket强制降级为长轮询，true 开启 false 关闭
-        polling: true,
+        "polling": true,
     },
 }
 ```

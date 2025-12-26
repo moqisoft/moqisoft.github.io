@@ -2,11 +2,11 @@
 
 ## 开启插件
 
-```js
-editorConfig: {
-    customization: {
+```json
+"editorConfig": {
+    "customization": {
         // tab中的插件菜单，true 显示 false 隐藏
-        plugins: true,
+        "plugins": true,
     },
 }
 ```
@@ -14,10 +14,10 @@ editorConfig: {
 ## 将插件目录映射到宿主机
 
 ```bash
-docker run -itd \    
-    --name ds-china \  
-    # 其它配置项...  
-    -v /host/path/to/sdkjs-plugins:/var/www/onlyoffice/documentserver/sdkjs-plugins  \       
+docker run -itd \
+    --name ds-china \
+    # 其它配置项...
+    -v /host/path/to/sdkjs-plugins:/var/www/onlyoffice/documentserver/sdkjs-plugins  \
     # 其它配置项...
     moqisoft/documentserver:latest
 ```
@@ -28,7 +28,6 @@ docker run -itd \
 
 ![上传插件](/images/plugins.png)
 
-
 官方提供了大量的插件示例，可以参考 https://api.onlyoffice.com/docs/plugin-and-macros/samples/plugin-samples/
 
-如果你有插件定制需求，也可联系QQ（327654929）。
+如果你有插件定制需求，也可联系 QQ（327654929）。
