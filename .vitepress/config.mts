@@ -7,8 +7,8 @@ export default defineConfig({
   outDir: "./dist",
   srcExclude: ["**/README.md", "**/TODO.md"],
   lang: "zh-CN",
-  title: "onlyoffice文档服务中国版",
-  description: "onlyoffice，office专家。部署简单，即开即用",
+  title: "onlyoffice文档服务中国版，中文办公专家",
+  description: "onlyoffice中文版, documentserver社区版增强, 中文weboffice专家. 部署简单, word在线编辑, 即开即用",
   // <meta name="google-adsense-account" content="ca-pub-7016841222608649">
   head: [
     [
@@ -32,6 +32,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "",
+    siteTitle: "onlyoffice文档服务中国版",
     search: {
       provider: "local",
       options: {},
@@ -40,7 +41,7 @@ export default defineConfig({
     nav: [
       { text: "首页", link: "/" },
       { text: "产品介绍", link: "/docs/product/summary" },
-      { text: "在线体验", link: "/example.html", target: "_blank" },
+      { text: "版本比较", link: "/docs/product/compare" },
       { text: "联系我们", link: "/docs/product/about" },
     ],
 
