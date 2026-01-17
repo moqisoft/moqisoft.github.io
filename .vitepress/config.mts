@@ -2,6 +2,9 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  sitemap: {
+    hostname: "https://onlyoffice.moqisoft.com",
+  },
   base: "/",
   cleanUrls: true,
   outDir: "./dist",
