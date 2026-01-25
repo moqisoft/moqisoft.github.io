@@ -36,7 +36,7 @@ docker run -itd \
     -v /host/path/to/sdkjs-plugins:/var/www/onlyoffice/documentserver/sdkjs-plugins \ 
     -v /proc/cpuinfo:/host/proc/cpuinfo \  # 高级版必须
     -v /sys/class:/host/sys/class \  # 高级版必须
-    moqisoft/documentserver:9.2.1  # 注意替换为实际经项名
+    moqisoft/documentserver:9.2.1  # 注意替换为实际镜像名
 ```
 
 ## 启动 example
