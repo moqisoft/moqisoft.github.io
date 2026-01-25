@@ -3,25 +3,22 @@
 ## 拉取镜像
 
 #### docker hub
-AMD64
+
 ```bash
-docker pull moqisoft/documentserver:9.2.1-amd64
-```
-ARM64
-```bash
-docker pull moqisoft/documentserver:9.2.1-arm64
+docker pull moqisoft/documentserver:9.2.1
 ```
 
-#### 阿里云
-AMD64
-```bash
-docker pull crpi-jfv3ro7j3i1a1bjk.cn-shanghai.personal.cr.aliyuncs.com/moqisoft/documentserver:9.2.1-amd64
-```
+#### 国内免费第三方加速
 
-ARM64
+**1️⃣ 1ms**
 ```bash
-docker pull crpi-jfv3ro7j3i1a1bjk.cn-shanghai.personal.cr.aliyuncs.com/moqisoft/documentserver:9.2.1-arm64
-```     
+docker pull docker.1ms.run/moqisoft/documentserver:9.2.1
+```
+**2️⃣ dockerproxy**
+```bash
+docker pull dockerproxy.net/moqisoft/documentserver:9.2.1
+```
+如遇第三方加速不稳定，请关注第三方官方网站或交流群公告
 
 ## 启动编辑服务
 
@@ -39,7 +36,7 @@ docker run -itd \
     -v /host/path/to/sdkjs-plugins:/var/www/onlyoffice/documentserver/sdkjs-plugins \ 
     -v /proc/cpuinfo:/host/proc/cpuinfo \  # 高级版必须
     -v /sys/class:/host/sys/class \  # 高级版必须
-    moqisoft/documentserver:9.2.1-amd64
+    moqisoft/documentserver:9.2.1  # 注意替换为实际经项名
 ```
 
 ## 启动 example
