@@ -43,6 +43,8 @@ onlyoffice documentserver 默认开启了 jwt 认证，你如果执意开启，�
 
 documentserver 在开档时使用参数 `document.permissions.copy` 配置控制是否允许复制。请仔细核对你的集成参数。
 
+部分第三方系统集成 documentserver 时没有传递 `copy` 权限，也有可能会导致权限不符合预期。请尽量显示传递权限字段。
+
 另外，documentserver 的默认逻辑是快捷键读写的是系统剪切板内容，鼠标右键读写的是内部剪切板内容，需要注意操作习惯。
 
 ## 再次打开文档提示版本已更新
