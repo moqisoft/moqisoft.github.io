@@ -448,12 +448,7 @@ class OfficeManager {
           logo: {
             visible: true,
           },
-          about: false,
-          resPrefix: [
-            "https://ds-china-files.moqisoft.com",
-            "https://ds-china-files2.moqisoft.com",
-            "https://ds-china-files3.moqisoft.com",
-          ],
+          about: false
         },
         user: {
           group: "",
