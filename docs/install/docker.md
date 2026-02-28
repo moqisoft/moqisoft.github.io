@@ -1,3 +1,7 @@
+---
+description: onlyoffice中国版docker安装部署教程，包含镜像拉取、容器启动参数配置、example启动、访问验证等完整部署流程。
+---
+
 # 安装部署
 
 ## 拉取镜像

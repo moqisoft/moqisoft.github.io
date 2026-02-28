@@ -1,3 +1,7 @@
+---
+description: onlyoffice中国版websocket强制降级为长轮询功能，解决网闸隔离环境下的连接问题，支持高级版polling配置选项。
+---
+
 # 降级为长轮询
 
 > [!TIP]

@@ -2,6 +2,12 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  vite: {
+    server: {
+      host: "127.0.0.1",
+      port: 5273,
+    },
+  },
   sitemap: {
     hostname: "https://onlyoffice.moqisoft.com",
   },
@@ -11,17 +17,15 @@ export default defineConfig({
   srcExclude: ["**/README.md", "**/TODO.md"],
   lang: "zh-CN",
   title: "onlyoffice文档服务中国版，中文办公专家",
-  description: "onlyoffice中文版, documentserver社区版增强, 中文weboffice专家. 部署简单, word在线编辑, 即开即用",
+  description:
+    "onlyoffice中文版, documentserver社区版增强, 中文weboffice专家. 部署简单, word在线编辑, 即开即用",
   // <meta name="google-adsense-account" content="ca-pub-7016841222608649">
   head: [
     [
       "meta",
       { name: "google-adsense-account", content: "ca-pub-7016841222608649" },
     ],
-    [
-      "meta",
-      { name: "baidu-site-verification", content: "codeva-rt8FUjktiP" },
-    ],
+    ["meta", { name: "baidu-site-verification", content: "codeva-rt8FUjktiP" }],
     [
       "script",
       {
@@ -45,6 +49,11 @@ export default defineConfig({
       { text: "首页", link: "/" },
       { text: "产品介绍", link: "/docs/product/summary" },
       { text: "版本比较", link: "/docs/product/compare" },
+      {
+        text: "技术文章",
+        link: "/posts/",
+        activeMatch: "^/posts/",
+      },
       { text: "联系我们", link: "/docs/product/about" },
     ],
 
@@ -79,6 +88,7 @@ export default defineConfig({
             { text: "管理面板", link: "/docs/feature/adminpanel" },
             { text: "子目录部署", link: "/docs/feature/basepath" },
             { text: "用户只读模式", link: "/docs/feature/readonly" },
+            { text: "动态切换权限", link: "/docs/feature/changepermissions" },
           ],
         },
       ],
@@ -94,7 +104,7 @@ export default defineConfig({
     footer: {
       // message:
       //   'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
-      copyright: "Copyright © 2025 moqisoft.com",
+      copyright: `Copyright © 2025-${new Date().getFullYear()} <a href="https://onlyoffice.moqisoft.com" target="_blank">moqisoft.com</a>`,
     },
 
     docFooter: {

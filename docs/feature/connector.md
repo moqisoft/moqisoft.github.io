@@ -1,3 +1,7 @@
+---
+description: onlyoffice中国版连接器与自动化API功能，支持外部系统通过JSAPI操作文档，实现合同生成、AI写作、报表自动化等高级功能。
+---
+
 # 连接器与自动化 API
  
 > [!TIP]

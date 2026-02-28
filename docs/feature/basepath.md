@@ -1,3 +1,7 @@
+---
+description: onlyoffice中国版子目录部署配置指南，提供nginx转发规则、X-Forwarded-Prefix头部设置、websocket支持等完整部署方案。
+---
+
 # 子目录部署
 
 中国版支持子目录部署，比如你需要将 `documentserver` 部署在 `/myeditor` 路径下，开启也非常方便。

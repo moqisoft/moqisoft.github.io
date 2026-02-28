@@ -1,0 +1,35 @@
+.fancybox__container {
+  --fancybox-backdrop-bg: none;
+  --f-caption-color: var(--vp-c-text-1);
+  --f-thumb-selected-shadow: inset 0 0 0 2px var(--vp-c-brand-1);
+
+  .f-carousel__toolbar {
+    --f-button-bg: none;
+    --f-button-hover-bg: rgba(var(--vp-c-bg-reverse-rgb), 0.1);
+    --f-button-color: rgba(var(--vp-c-bg-reverse-rgb), 1);
+    --f-button-hover-color: rgba(var(--vp-c-bg-reverse-rgb), 1);
+    --f-button-svg-disabled-opacity: 0.2;
+    background: rgba(var(--vp-c-bg-rgb), 0.2);
+
+    .f-counter {
+      color: var(--vp-c-text-1);
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(var(--vp-c-bg-rgb), 0.5);
+    backdrop-filter: blur(10px);
+  }
+
+  .f-panzoom__content {
+    object-fit: initial;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  }
+}

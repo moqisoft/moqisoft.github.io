@@ -1,0 +1,179 @@
+@import "./post.less";
+@import "./fancybox.less";
+
+// Vercel Geist 字体 (本地安装)
+@import "@fontsource/geist-sans";
+@import "@fontsource/geist-mono";
+
+:root {
+  // Geist 字体设置
+  // --vp-font-family-base: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+  //   'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --vp-font-family-base: "Punctuation SC", "Inter", ui-sans-serif, system-ui,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+
+  // --vp-font-family-mono: 'Geist Mono', ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Monaco, Consolas,
+  //   'Liberation Mono', 'Courier New', monospace;
+  --font-family-number: var(--vp-font-family-base);
+  // Nav 透明度
+  --vp-nav-bg-color: rgba(255, 255, 255, 0.7);
+  --vp-local-nav-bg-color: rgba(255, 255, 255, 0.7);
+  --vp-c-bg-rgb: 255, 255, 255;
+  --vp-c-bg-reverse-rgb: 27, 27, 31;
+  --bprogress-color: var(--vp-c-brand-3); // 进度条颜色
+}
+
+.dark {
+  // Nav 透明度
+  --vp-nav-bg-color: rgba(27, 27, 31, 0.7);
+  --vp-local-nav-bg-color: rgba(27, 27, 31, 0.7);
+  --vp-c-bg-rgb: 27, 27, 31;
+  --vp-c-bg-reverse-rgb: 255, 255, 255;
+}
+
+svg {
+  display: inline-block;
+}
+
+// 移除编辑信息
+.edit-info {
+  display: none !important;
+}
+
+.iconify {
+  width: 16px;
+  height: 16px;
+  // color: var(--vp-c-text-1);
+  vertical-align: -0.2rem;
+}
+
+// 整体布局
+.Layout {
+  min-height: 100dvh !important;
+}
+
+// 滚动条
+:root::-webkit-scrollbar,
+.VPSidebar::-webkit-scrollbar,
+pre::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+
+  &-thumb {
+    border-radius: 6px;
+    background-color: rgba(192, 192, 192, 0.8);
+
+    &:hover {
+      background-color: rgba(128, 128, 128, 0.8);
+    }
+  }
+}
+
+// 去除 Nav Footer 边框/过渡
+.VPNavBar,
+.VPFooter {
+  transition: none !important;
+  border: none !important;
+}
+
+// Nav 高斯模糊 / 分割线
+.VPLocalNav {
+  backdrop-filter: blur(10px);
+}
+
+.VPNavBar {
+  &:not(.has-sidebar) {
+    backdrop-filter: blur(10px);
+  }
+
+  &.has-sidebar {
+    .content-body {
+      backdrop-filter: blur(10px);
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .VPNavBar {
+    &:not(.has-sidebar) {
+      box-shadow: 0 0.3125rem 0.3125rem -0.3125rem rgba(0, 0, 0, 0.117);
+
+      &:not(.top) {
+        box-shadow: 0 0.3125rem 0.3125rem -0.3125rem rgba(0, 0, 0, 0.117);
+      }
+
+      .divider {
+        display: none;
+      }
+    }
+  }
+}
+
+// Footer 链接样式
+.VPFooter a {
+  text-decoration: none !important;
+  transition: none !important;
+
+  &:hover {
+    color: var(--vp-c-brand) !important;
+  }
+}
+
+// layout: doc
+.vp-doc {
+  // 去除 a 下划线
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline dotted;
+      text-underline-offset: 0.3rem;
+    }
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    max-width: 75%;
+  }
+
+  li p {
+    margin: 8px 0;
+  }
+
+  // 标题样式
+  h2 {
+    margin-top: 20px;
+    padding: 0 0 14px;
+    border: none;
+    border-bottom: 1px solid var(--vp-c-divider);
+  }
+
+  h3 {
+    // font-size: 18px;
+    margin-top: 16px;
+  }
+
+  // 标题前 # 的位置
+  h1,
+  h2,
+  h3 {
+    font-weight: 700;
+    .header-anchor {
+      top: auto;
+    }
+
+    a {
+      &:not(.header-anchor) {
+        font-weight: 700;
+        color: var(--vp-c-text-1);
+
+        &:hover {
+          color: var(--vp-c-brand-2);
+        }
+      }
+    }
+  }
+}

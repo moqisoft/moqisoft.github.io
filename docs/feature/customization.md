@@ -1,3 +1,7 @@
+---
+description: onlyoffice中国版个性化配置指南，支持自定义logo、品牌信息、界面元素隐藏、默认字体设置、拼写检查关闭等高级定制功能。
+---
+
 # 个性化配置
 
 对编辑器的个性化配置全部在 `editorConfig.customization` 对象内

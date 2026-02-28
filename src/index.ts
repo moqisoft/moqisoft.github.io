@@ -1,0 +1,44 @@
+import { onMounted, onUnmounted } from 'vue';
+import { EnhanceAppContext, inBrowser } from 'vitepress';
+import DefaultTheme from 'vitepress/theme';
+import Home from './views/HomeView.vue';
+import Archives from './views/ArchivesView.vue';
+import Category from './views/CategoryView.vue';
+import Page from './views/PageView.vue';
+import Password from './views/PasswordView.vue';
+import { bindFancybox, destroyFancybox } from './utils/fancybox';
+import { BProgress } from '@bprogress/core';
+import '@bprogress/core/css';
+import './styles/index.less';
+import PostMeta from './components/PostMeta.vue';
+
+export default {
+  extends: DefaultTheme,
+  enhanceApp({ app, router }: EnhanceAppContext) {
+    app.component('Home', Home);
+    app.component('Archives', Archives);
+    app.component('Category', Category);
+    app.component('Page', Page);
+    app.component('Password', Password);
+    app.component('PostMeta', PostMeta);
+    if (inBrowser) {
+      BProgress.configure({ showSpinner: false });
+      router.onBeforeRouteChange = () => {
+        BProgress.start();
+        destroyFancybox(); // 销毁图片查看器
+      };
+      router.onAfterRouteChange = () => {
+        BProgress.done();
+        bindFancybox(); // 绑定图片查看器
+      };
+    }
+  },
+  setup() {
+    onMounted(() => {
+      bindFancybox();
+    });
+    onUnmounted(() => {
+      destroyFancybox();
+    });
+  }
+};
