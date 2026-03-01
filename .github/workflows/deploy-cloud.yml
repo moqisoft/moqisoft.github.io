@@ -33,5 +33,5 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           port: ${{ secrets.SERVER_PORT }}
           source: "dist/*"
-          target: "/opt/1panel/www/sites/ds-china.moqisoft.com/index"
+          target: "/opt/1panel/www/sites/onlyoffice.moqisoft.com/index"
           strip_components: 1
