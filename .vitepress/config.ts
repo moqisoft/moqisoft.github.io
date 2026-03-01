@@ -98,7 +98,7 @@ export default defineConfig<ThemeConfig>({
             { text: "管理面板", link: "/docs/feature/adminpanel" },
             { text: "子目录部署", link: "/docs/feature/basepath" },
             { text: "用户只读模式", link: "/docs/feature/readonly" },
-            // { text: "动态切换权限", link: "/docs/feature/changepermissions" },
+            { text: "动态切换权限", link: "/docs/feature/changepermissions" },
           ],
         },
       ],
