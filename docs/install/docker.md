@@ -9,18 +9,18 @@ description: onlyoffice中国版docker安装部署教程，包含镜像拉取、
 #### docker hub
 
 ```bash
-docker pull moqisoft/documentserver:9.3.0
+docker pull moqisoft/documentserver:9.3.1
 ```
 
 #### 国内免费第三方加速
 
 **1️⃣ 1ms**
 ```bash
-docker pull docker.1ms.run/moqisoft/documentserver:9.3.0
+docker pull docker.1ms.run/moqisoft/documentserver:9.3.1
 ```
 **2️⃣ dockerproxy**
 ```bash
-docker pull dockerproxy.net/moqisoft/documentserver:9.3.0
+docker pull dockerproxy.net/moqisoft/documentserver:9.3.1
 ```
 如遇第三方加速不稳定，请关注第三方官方网站或交流群公告
 
@@ -29,18 +29,17 @@ docker pull dockerproxy.net/moqisoft/documentserver:9.3.0
 ```bash
 docker run -itd \    
     --name ds-china \  
-    -p 9000:80 \  
-    -p 9090:8000 \  
+    -p 9000:80 \  # 编辑服务访问端口
+    -p 9090:8000 \  # info 接口端口
     --restart=always \  
     --privileged \  # 高级版必须，某些情况下启动报错也需要传递该参数
     -e ALLOW_PRIVATE_IP_ADDRESS=true \  
     -e JWT_ENABLED=false \  
     -v /host/path/to/Data:/var/www/onlyoffice/Data \  # 高级版必须   
     -v /host/path/to/App_Data:/var/www/onlyoffice/App_Data \  
-    -v /host/path/to/sdkjs-plugins:/var/www/onlyoffice/documentserver/sdkjs-plugins \ 
     -v /proc/cpuinfo:/host/proc/cpuinfo \  # 高级版必须
     -v /sys/class:/host/sys/class \  # 高级版必须
-    moqisoft/documentserver:9.3.0  # 注意替换为实际镜像名
+    moqisoft/documentserver:9.3.1  # 注意替换为实际镜像名
 ```
 
 ## 启动 example
