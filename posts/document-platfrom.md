@@ -11,6 +11,9 @@ tags:
   - onlyoffice
   - POI
   - 文档中台
+prev:
+  text: 为什么 Office 文档会因为“缺少字体”而出现乱码、符号异常？一文讲清原理、问题与解决方法
+  link: /posts/fonts
 next:
   text: 信创与数字化转型必备：三大开源Office选型终极指南，一篇讲透！
   link: /posts/innovation-and-digitization
