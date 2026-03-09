@@ -9,6 +9,9 @@ tags:
   - onlyoffice
   - 字体
   - 乱码
+prev:
+  text: OnlyOffice动态权限API实战：像WPS一样实时收回文档编辑权
+  link: /posts/permission
 next:
   text: 文档能力中台化实践：一份面向自研Office处理产品的理性技术选型说明
   link: /posts/document-platfrom
