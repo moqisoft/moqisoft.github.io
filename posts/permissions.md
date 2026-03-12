@@ -8,6 +8,9 @@ category: 文章
 tags:
   - onlyoffice
   - 动态权限
+prev:
+  text: 企业协同文档工具（WebOffice）选型指南：从微软、金山到开源封装的全面解析
+  link: /posts/jishu-xuanxing
 next:
   text: 为什么 Office 文档会因为“缺少字体”而出现乱码、符号异常？一文讲清原理、问题与解决方法
   link: /posts/fonts
