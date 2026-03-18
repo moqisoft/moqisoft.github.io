@@ -9,6 +9,9 @@ tags:
   - onlyoffice
   - weboffice
   - 企业网盘
+prev:
+  text: 为什么同一个Word文件，在OnlyOffice、微软Office和WPS里排版不一样？深度解析
+  link: /posts/paiban-chayi
 next:
   text: 企业协同文档工具（WebOffice）选型指南：从微软、金山到开源封装的全面解析
   link: /posts/jishu-xuanxing
