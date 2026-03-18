@@ -50,8 +50,8 @@ export function postsPlugin(): Plugin {
         .sort((a, b) => new Date(b.datetime).getTime() - new Date(a.datetime).getTime());
     },
 
-    configureServer(server) {
-      server.middlewares.use('/api/posts.json', (req, res) => {
+    configureServer(server: any) {
+      server.middlewares.use('/api/posts.json', (req: any, res: any) => {
         res.setHeader('Content-Type', 'application/json');
         res.end(JSON.stringify(posts));
       });

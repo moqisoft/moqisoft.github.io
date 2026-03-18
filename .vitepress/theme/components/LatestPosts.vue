@@ -24,6 +24,7 @@ const loading = ref(true);
 onMounted(async () => {
   try {
     // 从 API 获取文章数据
+    // 优先尝试从插件提供的 API 获取,如果失败则从 public 目录获取
     const response = await fetch('/api/posts.json');
     if (response.ok) {
       const data = await response.json();

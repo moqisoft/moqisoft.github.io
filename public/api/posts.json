@@ -1,0 +1,238 @@
+[
+  {
+    "description": "为什么同一个Word文件，在OnlyOffice、微软Office和WPS里排版不一样？深度解析",
+    "title": "为什么同一个Word文件，在OnlyOffice、微软Office和WPS里排版不一样？深度解析",
+    "datetime": "2026-03-18 16:19:46",
+    "permalink": "/posts/paiban-chayi",
+    "outline": "deep",
+    "category": "文章",
+    "tags": [
+      "onlyoffice",
+      "跑版",
+      "排版差异"
+    ],
+    "next": {
+      "text": "技术人的傲慢：为什么你以为能搞定的OnlyOffice，最后却成了大坑？",
+      "link": "/posts/jishuren-aoman"
+    },
+    "excerpt": "很多用户在使用 **ONLYOFFICE** 进行文档预览或编辑时，经常会提出一个灵魂拷问： **为什么同一个 Word 文件，在 Microsoft Word 或 WPS Office 中打开时，排版效果会不一样？** **常见现象包括：** * 相同文字，位置不同 * 文档页数不同 * 表格分页"
+  },
+  {
+    "description": "技术人的傲慢：为什么你以为能搞定的OnlyOffice，最后却成了大坑？",
+    "title": "技术人的傲慢：为什么你以为能搞定的OnlyOffice，最后却成了大坑？",
+    "datetime": "2026-03-12 16:17:19",
+    "permalink": "/posts/jishuren-aoman",
+    "outline": "deep",
+    "category": "文章",
+    "tags": [
+      "onlyoffice",
+      "weboffice",
+      "企业网盘"
+    ],
+    "prev": {
+      "text": "为什么同一个Word文件，在OnlyOffice、微软Office和WPS里排版不一样？深度解析",
+      "link": "/posts/paiban-chayi"
+    },
+    "next": {
+      "text": "企业协同文档工具（WebOffice）选型指南：从微软、金山到开源封装的全面解析",
+      "link": "/posts/jishu-xuanxing"
+    },
+    "excerpt": "OA、企业网盘、ERP、合同、知识库、公文等应用强依赖于底层的WebOffice来补齐在线编辑、协同编辑等能力。鉴于Office的高度专业性和复杂性，进入门槛较高，需要专业厂商来开发，如微软、金山、永中等。应用厂商在实际项目交付过程中，要么依赖客户采购的WebOffice，并在此基础上集成，要么独自"
+  },
+  {
+    "description": "企业协同文档工具（WebOffice）选型指南：从微软、金山到开源封装的全面解析",
+    "title": "企业协同文档工具（WebOffice）选型指南：从微软、金山到开源封装的全面解析",
+    "datetime": "2026-03-12 16:11:15",
+    "permalink": "/posts/jishu-xuanxing",
+    "outline": "deep",
+    "category": "文章",
+    "tags": [
+      "onlyoffice",
+      "weboffice",
+      "wps"
+    ],
+    "prev": {
+      "text": "技术人的傲慢：为什么你以为能搞定的OnlyOffice，最后却成了大坑？",
+      "link": "/posts/jishuren-aoman"
+    },
+    "next": {
+      "text": "OnlyOffice动态权限API实战：像WPS一样实时收回文档编辑权",
+      "link": "/posts/permission"
+    },
+    "excerpt": "随着企业信息化进程的推进，为跨团队，团队内提供高效协同的支撑能力成为越来越多公司的首选。其中在线+协同编辑文档已成为企业高效沟通与管理的关键环节。无论是初创团队还是大型公司，都需要借助灵活、稳定的协作工具来保障工作流畅度。鉴于企业常用的文件格式为Office类型，本篇文章将介绍几款市场主流的在线+协"
+  },
+  {
+    "description": "为什么 Office 文档会因为“缺少字体”而出现乱码、符号异常？一文讲清原理、问题与解决方法。",
+    "title": "OnlyOffice动态权限API实战：像WPS一样实时收回文档编辑权",
+    "datetime": "2026-03-09 13:14:55",
+    "permalink": "/posts/permission",
+    "outline": "deep",
+    "category": "文章",
+    "tags": [
+      "onlyoffice",
+      "动态权限"
+    ],
+    "prev": {
+      "text": "企业协同文档工具（WebOffice）选型指南：从微软、金山到开源封装的全面解析",
+      "link": "/posts/jishu-xuanxing"
+    },
+    "next": {
+      "text": "为什么 Office 文档会因为“缺少字体”而出现乱码、符号异常？一文讲清原理、问题与解决方法",
+      "link": "/posts/fonts"
+    },
+    "excerpt": "在企业数字化办公场景中，“分享”早已不是简单的发送链接，而是**对权限的精细化掌控能力** 。 以 金山办公 旗下的 WPS 云文档 为代表的云文档系统，其核心能力之一正是： 而在基于 **文档管理系统 + OnlyOffice** 构建企业私有云文档平台的架构中，这种“动态掌控权”能力长期缺失。 "
+  },
+  {
+    "description": "为什么 Office 文档会因为“缺少字体”而出现乱码、符号异常？一文讲清原理、问题与解决方法。",
+    "title": "为什么 Office 文档会因为“缺少字体”而出现乱码、符号异常？一文讲清原理、问题与解决方法",
+    "datetime": "2026-03-09 13:08:39",
+    "permalink": "/posts/fonts",
+    "outline": "deep",
+    "category": "文章",
+    "tags": [
+      "onlyoffice",
+      "字体",
+      "乱码"
+    ],
+    "prev": {
+      "text": "OnlyOffice动态权限API实战：像WPS一样实时收回文档编辑权",
+      "link": "/posts/permission"
+    },
+    "next": {
+      "text": "文档能力中台化实践：一份面向自研Office处理产品的理性技术选型说明",
+      "link": "/posts/document-platfrom"
+    },
+    "excerpt": "很多人在使用文档系统或在线编辑器时都会遇到这样的情况： * 打开文档后字体变了 * 项目符号变成方框 * 勾选符号变乱码 * 文档排版突然变乱 * 在本地电脑正常，但在在线系统里显示不对 例如在使用 OnlyOffice、在线文档系统或文档预览系统时，这类问题尤其常见。 很多人会以为：“是不是系统 "
+  },
+  {
+    "date": "2026-02-27T00:00:00.000Z",
+    "description": "这篇文章对自研Office文档处理产品的技术选型进行了深入分析，核心观点是必须采用“多引擎协同”的架构。以下是根据原文提取的Markdown格式内容，并对表格进行了规范化处理。",
+    "title": "文档能力中台化实践：一份面向自研Office处理产品的理性技术选型说明",
+    "datetime": "2026-02-28 10:50:09",
+    "permalink": "/posts/document-platfrom",
+    "outline": "deep",
+    "category": "文章",
+    "tags": [
+      "onlyoffice",
+      "POI",
+      "文档中台"
+    ],
+    "prev": {
+      "text": "为什么 Office 文档会因为“缺少字体”而出现乱码、符号异常？一文讲清原理、问题与解决方法",
+      "link": "/posts/fonts"
+    },
+    "next": {
+      "text": "信创与数字化转型必备：三大开源Office选型终极指南，一篇讲透！",
+      "link": "/posts/innovation-and-digitization"
+    },
+    "excerpt": "当团队第一次尝试自研 Office 文档处理能力时，往往会低估这件事情的复杂度。 常见误判包括： * ❌ 认为“POI 能读写 Word，就能做大部分文档能力” * ❌ 认为“选一个商业组件就能一劳永逸” * ❌ 认为“文档处理只是转换为 PDF” **但现实是**： 这份说明不是介绍 API，而是"
+  },
+  {
+    "date": "2026-02-27T00:00:00.000Z",
+    "description": "这篇关于三大开源Office选型的深度对比指南，我已为你整理成Markdown格式。文章内容非常详实，包含多个核心对比表格，在转换时已确保其符合Markdown规范。",
+    "title": "信创与数字化转型必备：三大开源Office选型终极指南，一篇讲透！",
+    "datetime": "2026-02-28 10:50:09",
+    "permalink": "/posts/innovation-and-digitization",
+    "outline": "deep",
+    "category": "文章",
+    "tags": [
+      "onlyoffice",
+      "信创",
+      "数字化转型"
+    ],
+    "prev": {
+      "text": "文档能力中台化实践：一份面向自研Office处理产品的理性技术选型说明",
+      "link": "/posts/document-platfrom"
+    },
+    "next": {
+      "text": "企业级ONLYOFFICE + PostgreSQL部署避坑指南：参数优化与稳定性分析",
+      "link": "/posts/onlyoffice-postgresql-tuning"
+    },
+    "excerpt": "在信创国产化浪潮与数字化转型的双重驱动下，政企单位的办公软件选型正站在一个全新的十字路口。高昂的商业授权费用、数据安全的紧迫要求、在线协作的现实需求，都驱使着决策者将目光投向开源世界。OnlyOffice、LibreOffice、OpenOffice这三款声名在外的开源办公套件，成为了热门候选。 但"
+  },
+  {
+    "date": "2026-02-27T00:00:00.000Z",
+    "description": "本文基于生产环境真实踩坑经验，深入分析ONLYOFFICE Document Server与PostgreSQL搭配时的稳定性问题，并提供经过验证的参数优化方案，助你解决90%的部署故障。",
+    "title": "企业级ONLYOFFICE + PostgreSQL部署避坑指南：参数优化与稳定性分析",
+    "datetime": "2026-02-28 10:50:09",
+    "permalink": "/posts/onlyoffice-postgresql-tuning",
+    "outline": "deep",
+    "category": "文章",
+    "tags": [
+      "onlyoffice",
+      "postgresql",
+      "部署优化"
+    ],
+    "prev": {
+      "text": "信创与数字化转型必备：三大开源Office选型终极指南，一篇讲透！",
+      "link": "/posts/innovation-and-digitization"
+    },
+    "next": {
+      "text": "遇到ONLYOFFICE必须部署到子目录？这份解决方案请收好",
+      "link": "/posts/onlyoffice-subpath"
+    },
+    "excerpt": "在企业私有化部署场景中，ONLYOFFICE Document Server（由 ONLYOFFICE 提供）常与 PostgreSQL 搭配使用。在实际生产环境中，经常会出现以下现象： - 长时间编辑后偶发保存失败 - 高并发协作时文档异常 - 转换任务间歇性失败 - 数据库日志出现 `conne"
+  },
+  {
+    "date": "2026-02-27T00:00:00.000Z",
+    "description": "这篇关于 ONLYOFFICE 部署到 Nginx 子目录的实战文章，我已为你提取并整理为符合规范的 Markdown 格式。文章详细说明了子目录部署的优势、场景、以及针对 ONLYOFFICE 的具体配置方案。",
+    "title": "遇到ONLYOFFICE必须部署到子目录？这份解决方案请收好",
+    "datetime": "2026-02-28 10:50:09",
+    "permalink": "/posts/onlyoffice-subpath",
+    "outline": "deep",
+    "category": "文章",
+    "tags": [
+      "onlyoffice",
+      "部署优化"
+    ],
+    "prev": {
+      "text": "企业级ONLYOFFICE + PostgreSQL部署避坑指南：参数优化与稳定性分析",
+      "link": "/posts/onlyoffice-postgresql-tuning"
+    },
+    "next": {
+      "text": "如何避免合同在线编辑中的人为错误？一套更“工程化”的 OnlyOffice 使用方案",
+      "link": "/posts/user-readonly-mode"
+    },
+    "excerpt": "在实际的企业运维、Web 架构设计以及多系统整合场景中，将应用部署到 **Nginx 子目录（Subdirectory）** 是一种非常常见且实用的方式。本文将从原理、典型应用场景、注意事项入手，系统讲解 **Nginx 子目录部署** 的常见模式，并重点讨论 **ONLYOFFICE Docume"
+  },
+  {
+    "date": "2025-12-30T00:00:00.000Z",
+    "description": "本文基于生产环境真实踩坑经验，深入分析ONLYOFFICE Document Server与PostgreSQL搭配时的稳定性问题，并提供经过验证的参数优化方案，助你解决90%的部署故障。",
+    "title": "如何避免合同在线编辑中的人为错误？一套更“工程化”的 OnlyOffice 使用方案",
+    "datetime": "2026-02-28 10:50:09",
+    "permalink": "/posts/user-readonly-mode",
+    "outline": "deep",
+    "category": "文章",
+    "tags": [
+      "onlyoffice",
+      "用户只读模式",
+      "能力增强"
+    ],
+    "prev": {
+      "text": "遇到ONLYOFFICE必须部署到子目录？这份解决方案请收好",
+      "link": "/posts/onlyoffice-subpath"
+    },
+    "next": {
+      "text": "企业级ONLYOFFICE + PostgreSQL部署避坑指南：参数优化与稳定性分析",
+      "link": "/posts/9ce528"
+    },
+    "excerpt": "在企业合同管理场景中，传统的“在线 Word 编辑”模式存在以下核心问题： * 合同格式、条款高度敏感，人工编辑极易引入错误 * 编辑权限粒度粗，无法区分“谁能改哪一部分” * 编辑态、审批态、签署态不一致，存在法律风险 * 文档自由编辑难以满足审计、留痕与合规要求 为解决上述问题，本方案提出 **"
+  },
+  {
+    "date": "2026-02-27T00:00:00.000Z",
+    "description": "本文基于生产环境真实踩坑经验，深入分析ONLYOFFICE Document Server与PostgreSQL搭配时的稳定性问题，并提供经过验证的参数优化方案，助你解决90%的部署故障。",
+    "title": "企业级ONLYOFFICE + PostgreSQL部署避坑指南：参数优化与稳定性分析",
+    "datetime": "2026-02-27 17:18:25",
+    "permalink": "/posts/9ce528",
+    "tags": [
+      "onlyoffice",
+      "postgresql",
+      "部署优化"
+    ],
+    "prev": {
+      "text": "如何避免合同在线编辑中的人为错误？一套更“工程化”的 OnlyOffice 使用方案",
+      "link": "/posts/user-readonly-mode"
+    },
+    "excerpt": "在企业私有化部署场景中，ONLYOFFICE Document Server（由 ONLYOFFICE 提供）常与 PostgreSQL 搭配使用。在实际生产环境中，经常会出现以下现象： - 长时间编辑后偶发保存失败 - 高并发协作时文档异常 - 转换任务间歇性失败 - 数据库日志出现 `conne"
+  }
+]
