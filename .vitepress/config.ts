@@ -61,6 +61,8 @@ export default defineConfig<ThemeConfig>({
       { text: "首页", link: "/" },
       { text: "产品介绍", link: "/docs/product/summary" },
       { text: "版本比较", link: "/docs/product/compare" },
+      { text: "常见问题", link: "/docs/product/faq" },
+      { text: "更新日志", link: "/docs/product/changelog" },
       { text: "技术文章", link: "/page-1" },
       // { text: "分类", link: "/category" },
       // { text: "归档", link: "/archives" },
@@ -70,35 +72,46 @@ export default defineConfig<ThemeConfig>({
     sidebar: {
       "/docs/": [
         {
-          text: "快速上手",
+          text: "快速上手中国版",
           collapsed: false,
           items: [
             { text: "产品介绍", link: "/docs/product/summary" },
             { text: "安装部署", link: "/docs/install/docker" },
             { text: "版本比较", link: "/docs/product/compare" },
             { text: "高级版授权", link: "/docs/product/vip" },
-            { text: "更新日志", link: "/docs/product/changelog" },
-            { text: "集成示例", link: "/docs/product/example" },
-            // { text: "联系我们", link: "/docs/product/about" },
-            { text: "常见问题", link: "/docs/product/faq" },
+            
           ],
         },
         {
-          text: "功能增强",
+          text: "中国版功能增强",
           collapsed: false,
           items: [
-            { text: "个性配置", link: "/docs/feature/customization" },
-            { text: "安装插件", link: "/docs/feature/plugins" },
-            { text: "安装字体", link: "/docs/feature/fonts" },
             { text: "连接器", link: "/docs/feature/connector" },
+            { text: "个性配置", link: "/docs/feature/customization" },
             { text: "WS降级", link: "/docs/feature/longpoll" },
             { text: "防截图水印", link: "/docs/feature/watermark" },
             { text: "内部剪切板", link: "/docs/feature/copyout" },
-            { text: "访问加速", link: "/docs/feature/speedup" },
-            { text: "管理面板", link: "/docs/feature/adminpanel" },
-            { text: "子目录部署", link: "/docs/feature/basepath" },
             { text: "用户只读模式", link: "/docs/feature/readonly" },
             { text: "动态切换权限", link: "/docs/feature/changepermissions" },
+            { text: "管理面板", link: "/docs/feature/adminpanel" },
+          ],
+        },
+        // {
+        //   text: "增值功能/强烈推荐👍",
+        //   collapsed: false,
+        //   items: [
+        //     { text: "⭐️本地字体/开档加速🚀", link: "/docs/feature/fivestar" },
+        //   ],
+        // },
+        {
+          text: "更多配置",
+          collapsed: false,
+          items: [
+            { text: "集成示例", link: "/docs/product/example" },
+            { text: "访问加速", link: "/docs/feature/speedup" },
+            { text: "子目录部署", link: "/docs/feature/basepath" },
+            { text: "安装插件", link: "/docs/feature/plugins" },
+            { text: "安装字体", link: "/docs/feature/fonts" },
           ],
         },
       ],

@@ -2,7 +2,7 @@
 description: onlyoffice中国版提供通过插件或连接器动态切换权限，方便从外部动态控制权限。
 ---
 
-# 动态切换权限 <span class="ant-tag">9.3.0+支持</span>
+# 动态切换权限 <Badge type="danger" text="9.3.0+支持" />
 
 > [!TIP]  
 > - 该功能为高级版功能，如有需要请联系交流群（183026419）管理员
