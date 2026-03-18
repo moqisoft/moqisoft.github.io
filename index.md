@@ -23,3 +23,11 @@ features:
   - title: 满足多种业务场景接入需求
     details: 企业、政务、教育等行业：提供OA/协同办公/知识库/CRM/云盘/公文系统/公证平台/电子档案/稿件审核/智慧课堂/教研备课/作业/校务/证书考试等场景支持
 ---
+
+<script setup>
+import LatestPosts from './.vitepress/theme/components/LatestPosts.vue';
+</script>
+
+<LatestPosts />
+
+

@@ -1,6 +1,7 @@
 import { defineConfig } from "vitepress";
 import { usePosts } from "../src/composables/usePosts";
 import type { ThemeConfig } from "../src/types";
+import { postsPlugin } from "./plugin/postsPlugin";
 
 const { posts, rewrites } = await usePosts({
   pageSize: 6,
@@ -17,6 +18,7 @@ export default defineConfig<ThemeConfig>({
       host: "127.0.0.1",
       port: 5273,
     },
+    plugins: [postsPlugin()],
   },
   sitemap: {
     hostname: "https://onlyoffice.moqisoft.com",
