@@ -31,12 +31,8 @@
 
 按上述方案执行后，文档服务中国版 fonts 目录下所有字体，由优化前的 **416MB** 减少至优化后的 **21MB**，减少了 **95%**。
 
-## 筛选对自己可见
+#### 本地字体与wps效果对比
+![本地字体与wps效果对比](../../public/images/browserfont1.png)
 
-onlyoffice cell 中无法像 wps 的 excel 一样，对工作表数据筛选时设置仅对自己可见，这样在多人协作时互不影响。
-
-文档服务中国版支持【筛选仅对自己可见】，可以在同一 sheet 页筛选时互不影响。
-
-#### 效果展示
-
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=116254497112291&bvid=BV1JpwCz5EDv&cid=36809542218&p=1" scrolling="no" border="0" width="100%" height="400" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+#### 字体下载体积对比
+![字体下载体积对比](../../public/images/browserfont2.png)

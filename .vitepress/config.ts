@@ -2,56 +2,59 @@ import { defineConfig } from "vitepress";
 import { usePosts } from "../src/composables/usePosts";
 import type { ThemeConfig } from "../src/types";
 import { postsPlugin } from "./plugin/postsPlugin";
-import fs from 'fs';
-import path from 'path';
-import fg from 'fast-glob';
-import matter from 'gray-matter';
+import fs from "fs";
+import path from "path";
+import fg from "fast-glob";
+import matter from "gray-matter";
 
 // 生成 posts.json 文件的函数
 async function generatePostsJson() {
-  const paths = await fg('posts/**/*.md');
+  const paths = await fg("posts/**/*.md");
 
-  const posts = paths.map((postPath) => {
-    const { data, excerpt, content } = matter.read(postPath, {
-      excerpt: true,
-      excerpt_separator: '<!-- more -->',
-    });
+  const posts = paths
+    .map((postPath) => {
+      const { data, excerpt, content } = matter.read(postPath, {
+        excerpt: true,
+        excerpt_separator: "<!-- more -->",
+      });
 
-    const post = data as any;
+      const post = data as any;
 
-    // 生成摘要
-    let plainText = '';
-    if (excerpt) {
-      plainText = excerpt;
-    } else if (content) {
-      plainText = content
-        .replace(/```.*?```/gs, '')
-        .replace(/^#+\s.*$/gm, '')
-        .replace(/^>.*$/gm, '')
-        .trim()
-        .split(/\r\n|\n|\r/)
-        .join(' ')
-        .replace(/\s{2,}/g, ' ')
-        .slice(0, 150);
-    }
+      // 生成摘要
+      let plainText = "";
+      if (excerpt) {
+        plainText = excerpt;
+      } else if (content) {
+        plainText = content
+          .replace(/```.*?```/gs, "")
+          .replace(/^#+\s.*$/gm, "")
+          .replace(/^>.*$/gm, "")
+          .trim()
+          .split(/\r\n|\n|\r/)
+          .join(" ")
+          .replace(/\s{2,}/g, " ")
+          .slice(0, 150);
+      }
 
-    post.excerpt = plainText;
-    return post;
-  })
-    .filter((post) => post.display !== 'none')
-    .sort((a, b) => new Date(b.datetime).getTime() - new Date(a.datetime).getTime());
+      post.excerpt = plainText;
+      return post;
+    })
+    .filter((post) => post.display !== "none")
+    .sort(
+      (a, b) => new Date(b.datetime).getTime() - new Date(a.datetime).getTime(),
+    );
 
   // 写入到 public 目录
-  const publicDir = path.resolve(process.cwd(), 'public');
-  const apiDir = path.join(publicDir, 'api');
+  const publicDir = path.resolve(process.cwd(), "public");
+  const apiDir = path.join(publicDir, "api");
 
   if (!fs.existsSync(apiDir)) {
     fs.mkdirSync(apiDir, { recursive: true });
   }
 
-  const postsJsonPath = path.join(apiDir, 'posts.json');
+  const postsJsonPath = path.join(apiDir, "posts.json");
   fs.writeFileSync(postsJsonPath, JSON.stringify(posts, null, 2));
-  console.log('✓ Generated public/api/posts.json');
+  console.log("✓ Generated public/api/posts.json");
 }
 
 // 立即生成一次
@@ -141,7 +144,6 @@ export default defineConfig<ThemeConfig>({
             { text: "安装部署", link: "/docs/install/docker" },
             { text: "版本比较", link: "/docs/product/compare" },
             { text: "高级版授权", link: "/docs/product/vip" },
-            
           ],
         },
         {
@@ -162,7 +164,14 @@ export default defineConfig<ThemeConfig>({
           text: "五星功能/强烈推荐👍",
           collapsed: false,
           items: [
-            { text: "⭐️本地字体/开档加速🚀", link: "/docs/feature/fivestar" },
+            {
+              text: "⭐️本地字体/开档加速🚀",
+              link: "/docs/feature/fivestar-word",
+            },
+            {
+              text: "⭐️筛选仅对自己可见🔍",
+              link: "/docs/feature/fivestar-excel",
+            },
           ],
         },
         {

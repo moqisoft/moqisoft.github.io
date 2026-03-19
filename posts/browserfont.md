@@ -274,7 +274,7 @@ OnlyOffice 缓存的是“字体文件”，不是“解析后的字体”。也
 
 这套方案已经在 documentserver 中国版中成功落地，取得了显著的效果。未来，随着技术的发展和优化，相信可以进一步提升字体加载性能，为用户提供更加流畅的文档处理体验。
 
-如果想体验本地字体的优化效果，欢迎访问：[https://onlyoffice.moqisoft.com/docs/feature/fivestar](https://onlyoffice.moqisoft.com/docs/feature/fivestar)
+如果想体验本地字体的优化效果，欢迎访问：[⭐️本地字体/开档加速🚀](/docs/feature/fivestar-word)
 
 ---
 
