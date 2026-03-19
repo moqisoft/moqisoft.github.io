@@ -14,7 +14,7 @@ docker pull moqisoft/documentserver:9.3.1
 
 #### 国内免费第三方加速
 
-**1️⃣ 1ms**
+**1️⃣ 毫秒镜像**
 ```bash
 docker pull docker.1ms.run/moqisoft/documentserver:9.3.1
 ```
@@ -22,6 +22,12 @@ docker pull docker.1ms.run/moqisoft/documentserver:9.3.1
 ```bash
 docker pull dockerproxy.net/moqisoft/documentserver:9.3.1
 ```
+如果使用第三方加速，需要将镜像名修改为正确的名称
+```bash
+docker tag docker.1ms.run/moqisoft/documentserver:9.3.1 moqisoft/documentserver:9.3.1
+docker rmi docker.1ms.run/moqisoft/documentserver:9.3.1
+```
+
 如遇第三方加速不稳定，请关注第三方官方网站或交流群公告
 
 ## 启动编辑服务

@@ -18,8 +18,8 @@ description: onlyoffice中国版免费版与高级版功能对比，详细列出
 | [AdminPanel](../feature/adminpanel.md)                   | √      | √      |
 | 移动端完整编辑                                           | ×      | √      |
 | [个性化配置](../feature/customization.md)                | ×      | √      |
-| [高级 API 调用](../feature/connector.md)                 | ×      | √      |
-| [ws 强制降级](../feature/longpoll.md)                    | ×      | √      |
+| [高级 API 调用(连接器)](../feature/connector.md)         | ×      | √      |
+| [ws 强制降级为长轮询](../feature/longpoll.md)            | ×      | √      |
 | [用户只读模式](../feature/readonly.md)                   | ×      | √      |
 | [动态切换权限](../feature/changepermissions.md)          | ×      | √      |
 | ⭐️[本地字体](../feature/fivestar.md#本地字体)             | ×      | √\*    |
