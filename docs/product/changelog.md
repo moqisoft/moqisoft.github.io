@@ -13,8 +13,8 @@ description: onlyoffice中国版documentserver更新日志，记录v9.3.0、v9.2
 时间: 2026.03.19
 
 - 同步升级为官方最新 9.3.1 版本
-- 新增能力 [本地字体](../feature/fivestar.md#本地字体) ，访问加速🚀，五星⭐️好评👍
-- 新增能力 [筛选仅对自己可见](../feature/fivestar.md#筛选对自己可见) 
+- 新增能力 [本地字体](../feature/fivestar-word.md#本地字体) ，访问加速🚀，五星⭐️好评👍
+- 新增能力 [筛选仅对自己可见](../feature/fivestar-excel.md#筛选对自己可见) 
 - 新增能力 字体下拉列表排序，中文字体靠前
 - js/css 的 sourcemap 引用去除，防止出现 404 日志
 - 修复 9.3.0 版本 PDF 表单报错及菜单缺失问题
