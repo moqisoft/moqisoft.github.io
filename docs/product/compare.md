@@ -15,6 +15,7 @@ description: onlyoffice中国版免费版与高级版功能对比，详细列出
 | welcome 及 example 汉化                                  | √      | √      |
 | [防截图水印](../feature/watermark.md)                    | √      | √      |
 | [内部剪切板](../feature/copyout.md)                      | √      | √      |
+| [AdminPanel](../feature/adminpanel.md)                   | √      | √      |
 | 移动端完整编辑                                           | ×      | √      |
 | [个性化配置](../feature/customization.md)                | ×      | √      |
 | [高级 API 调用](../feature/connector.md)                 | ×      | √      |
