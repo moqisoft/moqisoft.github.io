@@ -1,5 +1,23 @@
 [
   {
+    "description": "本文将从 OnlyOffice 的真实架构出发，拆解字体加载机制，并给出一套从“短期缓解”到“工程级优化”的完整方案。",
+    "title": "OnlyOffice 开档及字体加载慢——问题剖析与优化落地实战",
+    "datetime": "2026-03-18 18:45:10",
+    "permalink": "/posts/browserfont",
+    "outline": "deep",
+    "category": "文章",
+    "tags": [
+      "onlyoffice",
+      "字体",
+      "性能优化"
+    ],
+    "next": {
+      "text": "为什么同一个Word文件，在OnlyOffice、微软Office和WPS里排版不一样？深度解析",
+      "link": "/posts/paiban-chayi"
+    },
+    "excerpt": "在私有化部署 OnlyOffice 的过程中，**“文档打开慢”几乎是所有团队都会遇到的问题**。而在中文场景下，这个问题往往更加严重——动辄几秒甚至十几秒的首屏时间，严重影响用户体验。 深入分析后你会发现： 本文将从 OnlyOffice 的真实架构出发，拆解字体加载机制，并给出一套从“短期缓解”"
+  },
+  {
     "description": "为什么同一个Word文件，在OnlyOffice、微软Office和WPS里排版不一样？深度解析",
     "title": "为什么同一个Word文件，在OnlyOffice、微软Office和WPS里排版不一样？深度解析",
     "datetime": "2026-03-18 16:19:46",
@@ -11,6 +29,10 @@
       "跑版",
       "排版差异"
     ],
+    "prev": {
+      "text": "OnlyOffice 开档及字体加载慢——问题剖析与优化落地实战",
+      "link": "/posts/browserfont"
+    },
     "next": {
       "text": "技术人的傲慢：为什么你以为能搞定的OnlyOffice，最后却成了大坑？",
       "link": "/posts/jishuren-aoman"

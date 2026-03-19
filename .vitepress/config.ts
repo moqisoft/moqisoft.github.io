@@ -158,13 +158,13 @@ export default defineConfig<ThemeConfig>({
             { text: "管理面板", link: "/docs/feature/adminpanel" },
           ],
         },
-        // {
-        //   text: "增值功能/强烈推荐👍",
-        //   collapsed: false,
-        //   items: [
-        //     { text: "⭐️本地字体/开档加速🚀", link: "/docs/feature/fivestar" },
-        //   ],
-        // },
+        {
+          text: "五星功能/强烈推荐👍",
+          collapsed: false,
+          items: [
+            { text: "⭐️本地字体/开档加速🚀", link: "/docs/feature/fivestar" },
+          ],
+        },
         {
           text: "更多配置",
           collapsed: false,

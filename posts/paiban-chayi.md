@@ -9,6 +9,9 @@ tags:
   - onlyoffice
   - 跑版
   - 排版差异
+prev:
+  text: OnlyOffice 开档及字体加载慢——问题剖析与优化落地实战
+  link: /posts/browserfont
 next:
   text: 技术人的傲慢：为什么你以为能搞定的OnlyOffice，最后却成了大坑？
   link: /posts/jishuren-aoman
