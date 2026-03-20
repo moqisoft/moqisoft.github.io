@@ -15,7 +15,7 @@
 
 这套方案同时对 PC 和 Mobile 模式生效，对于安卓设备无法缓存字体问题也会得到很大缓解。前已在 documentserver 中国版最新版本中落地，效果显著。
 
-方案原文链接 [OnlyOffice 开档及字体加载慢——问题剖析与优化落地实战](https://onlyoffice.moqisoft.com/post/browserfont)
+方案原文链接 [OnlyOffice 开档及字体加载慢——问题剖析与优化落地实战](https://onlyoffice.moqisoft.com/posts/browserfont)
 
 #### 实战效果
 
