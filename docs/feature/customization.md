@@ -1,13 +1,16 @@
 ---
-description: onlyoffice中国版个性化配置指南，支持自定义logo、品牌信息、界面元素隐藏、默认字体设置、拼写检查关闭等高级定制功能。
+description: onlyoffice中国版自定义配置指南，支持自定义logo、品牌信息、界面元素隐藏、默认字体设置、拼写检查关闭等高级定制功能。
 ---
 
-# 个性化配置
-
-对编辑器的个性化配置全部在 `editorConfig.customization` 对象内
+# 自定义配置
 
 > [!TIP]
 > 部分功能为高级版功能，如有需要请联系交流群（183026419）管理员
+
+自定义配置部分允许自定义编辑器界面，使其看起来像您的其他产品，并更改是否出现附加按钮、链接、更改徽标和编辑器所有者详细信息。
+
+对编辑器的自定义配置全部在 `editorConfig.customization` 对象内，完整配置对象及使用方式见 https://api.onlyoffice.com/zh-CN/docs/docs-api/usage-api/advanced-parameters/
+
 
 ## 自定义 logo
 

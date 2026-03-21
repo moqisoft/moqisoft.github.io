@@ -150,14 +150,14 @@ export default defineConfig<ThemeConfig>({
           text: "中国版功能增强",
           collapsed: false,
           items: [
-            { text: "连接器", link: "/docs/feature/connector" },
-            { text: "个性配置", link: "/docs/feature/customization" },
+            { text: "连接器 Connector", link: "/docs/feature/connector" },
+            { text: "自定义配置", link: "/docs/feature/customization" },
             { text: "WS降级", link: "/docs/feature/longpoll" },
             { text: "防截图水印", link: "/docs/feature/watermark" },
             { text: "内部剪切板", link: "/docs/feature/copyout" },
             { text: "用户只读模式", link: "/docs/feature/readonly" },
             { text: "动态切换权限", link: "/docs/feature/changepermissions" },
-            { text: "管理面板", link: "/docs/feature/adminpanel" },
+            { text: "管理面板 AdminPanel", link: "/docs/feature/adminpanel" },
           ],
         },
         {

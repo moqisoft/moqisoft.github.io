@@ -65,3 +65,6 @@ docker cp 容器名:/var/www/onlyoffice/documentserver/fonts ./fonts
 ![效果展示](/images/domains.png)
 
 ![效果展示](/images/domains2.png)
+
+> [!TIP]  
+> 升级版本或增减字体时，fonts 目录下的文件会发生变化，需要同步更新单独部署的字体文件。

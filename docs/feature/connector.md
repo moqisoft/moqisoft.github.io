@@ -1,5 +1,5 @@
 ---
-description: onlyoffice中国版连接器与自动化API功能，支持外部系统通过JSAPI操作文档，实现合同生成、AI写作、报表自动化等高级功能。
+description: onlyoffice中国版连接器与自动化API(Automation API)功能，支持外部系统通过JSAPI操作文档，实现合同生成、AI写作、报表自动化等高级功能。
 ---
 
 # 连接器与自动化 API
@@ -8,7 +8,7 @@ description: onlyoffice中国版连接器与自动化API功能，支持外部系
 > 该功能为高级版功能，如有需要请联系交流群（183026419）管理员
 
 
-Connector 是一个允许从外部源编辑文本文档、电子表格、演示文稿、PDF 和可填写表单的类。一般用于和自己的各类业务系统做集成，通过自动化 JSAPI 方式修改文档，能力较金山文档的 JSSDK 等强大很多。
+Connector 是一个允许从外部源编辑文本文档、电子表格、演示文稿、PDF 和可填写表单的类。一般用于和自己的各类业务系统做集成，通过自动化API (Automation API) 方式修改文档，能力较金山文档的 JSSDK 等强大很多。
 
 [点击查看 WPS SDK 官方文档](https://solution.wps.cn/docs/client/api/summary.html)  
 [点击查看 ONLYOFFICE 连接器官方文档](https://api.onlyoffice.com/docs/docs-api/usage-api/automation-api/)
