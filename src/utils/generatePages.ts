@@ -11,10 +11,12 @@ export const generatePages = async (config: Required<IPostsConfig>) => {
   const pageCount = postCount > 0 ? Math.ceil(postCount / pageSize) : 0;
 
   for (let i = 1; i <= pageCount; i++) {
-    const title = i === 1 && homepage ? '' : lang === 'zh' ? `\ntitle: 第${i}页` : `\ntitle: Page ${i}`;
+    // const title = i === 1 && homepage ? '' : lang === 'zh' ? `\ntitle: 第${i}页` : `\ntitle: Page ${i}`;
+    const title = i === 1 && homepage ? '' : lang === 'zh' ? `\ntitle: 技术文章` : `\ntitle: Page ${i}`;
     const page = `
 ---${title}
 layout: page
+description: 发布 onlyoffice documentserver 二次开发、深度优化及对在线文档编辑的深度思考等技术文章。
 ---
 
 <Page :pagination="${i}" :total="${pageCount}" :size="${pageSize}" :homepage="${homepage}">${slot}</Page>

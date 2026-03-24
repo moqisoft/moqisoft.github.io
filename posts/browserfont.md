@@ -9,6 +9,9 @@ tags:
   - onlyoffice
   - 字体
   - 性能优化
+prev:
+  text: 终于来了！Onlyoffice中国版Excel支持“仅对自己可见”筛选，多人协作不再互相干扰
+  link: /posts/filter-myself
 next:
   text: 为什么同一个Word文件，在OnlyOffice、微软Office和WPS里排版不一样？深度解析
   link: /posts/paiban-chayi
