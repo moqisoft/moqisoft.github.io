@@ -20,6 +20,19 @@ description: 针对OnlyOffice文档服务，本地字体功能通过智能裁剪
 
 方案原文链接 [OnlyOffice 开档及字体加载慢——问题剖析与优化落地实战](https://onlyoffice.moqisoft.com/posts/browserfont)
 
+#### 如何开启
+
+获得授权后，本地字体需要全局开启，配置位于 `editorConfig` 对象内
+
+```json
+"editorConfig": {
+    "customization": {
+        // 使用本地字体渲染，true 开启 false 关闭。
+        "browserFonts": true,
+    }
+}
+```
+
 #### 实战效果
 
 在一个空白 Word 文档场景中：
