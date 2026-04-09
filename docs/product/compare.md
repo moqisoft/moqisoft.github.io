@@ -7,23 +7,24 @@ description: onlyoffice中国版免费版与高级版功能对比，详细列出
 中国版版基于官方社区版最新源码编译，并做了大量功能增强。
 产品版本上分为 `免费版` 和 `高级版`，镜像安装后默认为免费版，可通过购买授权方式升级为高级版。[如何获得高级版授权](../product/vip.md)
 
-|                                                                | 免费版 | 高级版 |
-| -------------------------------------------------------------- | ------ | ------ |
-| AMD64 / ARM64                                                  | √      | √      |
-| 连接数                                                         | 20     | 无限制 |
-| 常用中文字体及排序                                             | √      | √      |
-| welcome 及 example 汉化                                        | √      | √      |
-| [防截图水印](../feature/watermark.md)                          | √      | √      |
-| [内部剪切板](../feature/copyout.md)                            | √      | √      |
-| [AdminPanel](../feature/adminpanel.md)                         | √      | √      |
-| 移动端完整编辑                                                 | ×      | √      |
-| [个性化配置](../feature/customization.md)                      | ×      | √      |
-| [高级 API 调用(连接器)](../feature/connector.md)               | ×      | √      |
-| [ws 强制降级为长轮询](../feature/longpoll.md)                  | ×      | √      |
-| [用户只读模式](../feature/readonly.md)                         | ×      | √      |
-| [动态切换权限](../feature/changepermissions.md)                | ×      | √      |
-| ⭐️[本地字体](../feature/fivestar-word.md#本地字体)              | ×      | √\*    |
-| ⭐️[筛选对自己可见](../feature/fivestar-excel.md#筛选对自己可见) | ×      | √\*    |
+|                                                                     | 免费版 | 高级版 |
+| ------------------------------------------------------------------- | ------ | ------ |
+| AMD64 / ARM64                                                       | √      | √      |
+| 连接数                                                              | 99     | 无限制 |
+| 常用中文字体、字体排序及界面汉化                                    | √      | √      |
+| [防截图水印](../feature/watermark.md)                               | √      | √      |
+| [内部剪切板](../feature/copyout.md)                                 | √      | √      |
+| [AdminPanel](../feature/adminpanel.md)                              | √      | √      |
+| 移动端完整编辑                                                      | ×      | √      |
+| [个性化配置](../feature/customization.md)                           | ×      | √      |
+| [高级 API 调用(连接器)](../feature/connector.md)                    | ×      | √      |
+| [ws 强制降级为长轮询](../feature/longpoll.md)                       | ×      | √      |
+| [用户只读模式](../feature/readonly.md)                              | ×      | √      |
+| [动态切换权限](../feature/changepermissions.md)                     | ×      | √      |
+| [PPT视频播放](../feature/pptvideoplay.md)                           | ×      | √      |
+| ⭐️[本地字体（Word/Excel/PPT，含移动端）](../feature/browserfonts.md) | ×      | √\*    |
+| ⭐️[筛选对自己可见（Excel）](../feature/privateview.md)               | ×      | √\*    |
+| ⭐️[迷你工具栏（Word）](../feature/minitoolbar.md)                    | ×      | √\*    |
 
 \* 星标功能为特别功能，具体开通方式请咨询交流群管理员（60天体验版已自动授权，可参照相关介绍文档完整体验）
 

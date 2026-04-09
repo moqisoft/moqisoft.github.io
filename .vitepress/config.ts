@@ -152,12 +152,16 @@ export default defineConfig<ThemeConfig>({
           items: [
             { text: "连接器 Connector", link: "/docs/feature/connector" },
             { text: "自定义配置", link: "/docs/feature/customization" },
-            { text: "WS降级", link: "/docs/feature/longpoll" },
-            { text: "防截图水印", link: "/docs/feature/watermark" },
-            { text: "内部剪切板", link: "/docs/feature/copyout" },
-            { text: "用户只读模式", link: "/docs/feature/readonly" },
-            { text: "动态切换权限", link: "/docs/feature/changepermissions" },
             { text: "管理面板 AdminPanel", link: "/docs/feature/adminpanel" },
+            { text: "WS降级 ⭐️", link: "/docs/feature/longpoll" },
+            { text: "防截图水印 ⭐️", link: "/docs/feature/watermark" },
+            { text: "内部剪切板 ⭐️", link: "/docs/feature/copyout" },
+            { text: "用户只读模式 ⭐️", link: "/docs/feature/readonly" },
+            {
+              text: "动态切换权限 ⭐️",
+              link: "/docs/feature/changepermissions",
+            },
+            { text: "PPT视频播放 ⭐️", link: "/docs/feature/pptvideoplay" },
           ],
         },
         {
@@ -166,11 +170,15 @@ export default defineConfig<ThemeConfig>({
           items: [
             {
               text: "⭐️本地字体/开档加速🚀",
-              link: "/docs/feature/fivestar-word",
+              link: "/docs/feature/browserfonts",
             },
             {
-              text: "⭐️筛选仅对自己可见🔍",
-              link: "/docs/feature/fivestar-excel",
+              text: "⭐️筛选对自己可见/互不干扰🔍",
+              link: "/docs/feature/privateview",
+            },
+            {
+              text: "⭐️迷你工具栏/专注写作🖊️",
+              link: "/docs/feature/minitoolbar",
             },
           ],
         },

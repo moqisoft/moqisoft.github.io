@@ -1,5 +1,23 @@
 [
   {
+    "description": "终于来了！Onlyoffice中国版Excel支持“仅对自己可见”筛选，多人协作不再互相干扰",
+    "title": "终于来了！Onlyoffice中国版Excel支持“仅对自己可见”筛选，多人协作不再互相干扰",
+    "datetime": "2026-03-24 09:36:42",
+    "permalink": "/posts/filter-myself",
+    "outline": "deep",
+    "category": "文章",
+    "tags": [
+      "onlyoffice",
+      "excel筛选",
+      "仅对自己可见"
+    ],
+    "next": {
+      "text": "OnlyOffice 开档及字体加载慢——问题剖析与优化落地实战",
+      "link": "/posts/browserfont"
+    },
+    "excerpt": "在多人协同编辑Excel文档时，筛选功能的相互干扰一直是一个典型的协作痛点。当一位协作者对表格进行筛选操作时，其他所有正在查看同一文档的用户都会被迫同步到相同的筛选视图，导致各自的工作流被频繁打断。这种设计虽然保证了数据一致性，但在实际团队协作中却严重影响了效率。 Onlyoffice中国版（基于9"
+  },
+  {
     "description": "本文将从 OnlyOffice 的真实架构出发，拆解字体加载机制，并给出一套从“短期缓解”到“工程级优化”的完整方案。",
     "title": "OnlyOffice 开档及字体加载慢——问题剖析与优化落地实战",
     "datetime": "2026-03-18 18:45:10",
@@ -11,6 +29,10 @@
       "字体",
       "性能优化"
     ],
+    "prev": {
+      "text": "终于来了！Onlyoffice中国版Excel支持“仅对自己可见”筛选，多人协作不再互相干扰",
+      "link": "/posts/filter-myself"
+    },
     "next": {
       "text": "为什么同一个Word文件，在OnlyOffice、微软Office和WPS里排版不一样？深度解析",
       "link": "/posts/paiban-chayi"
@@ -60,42 +82,6 @@
       "link": "/posts/jishu-xuanxing"
     },
     "excerpt": "OA、企业网盘、ERP、合同、知识库、公文等应用强依赖于底层的WebOffice来补齐在线编辑、协同编辑等能力。鉴于Office的高度专业性和复杂性，进入门槛较高，需要专业厂商来开发，如微软、金山、永中等。应用厂商在实际项目交付过程中，要么依赖客户采购的WebOffice，并在此基础上集成，要么独自"
-  },
-  {
-    "date": "2026-02-27T00:00:00.000Z",
-    "description": "这篇文章对自研Office文档处理产品的技术选型进行了深入分析，核心观点是必须采用“多引擎协同”的架构。以下是根据原文提取的Markdown格式内容，并对表格进行了规范化处理。",
-    "title": "文档能力中台化实践：一份面向自研Office处理产品的理性技术选型说明",
-    "datetime": "2026-02-28 10:50:09",
-    "permalink": "/posts/document-platfrom",
-    "outline": "deep",
-    "category": "文章",
-    "tags": [
-      "onlyoffice",
-      "POI",
-      "文档中台"
-    ],
-    "prev": {
-      "text": "为什么 Office 文档会因为“缺少字体”而出现乱码、符号异常？一文讲清原理、问题与解决方法",
-      "link": "/posts/fonts"
-    },
-    "next": {
-      "text": "信创与数字化转型必备：三大开源Office选型终极指南，一篇讲透！",
-      "link": "/posts/innovation-and-digitization"
-    },
-    "excerpt": "当团队第一次尝试自研 Office 文档处理能力时，往往会低估这件事情的复杂度。 常见误判包括： * ❌ 认为“POI 能读写 Word，就能做大部分文档能力” * ❌ 认为“选一个商业组件就能一劳永逸” * ❌ 认为“文档处理只是转换为 PDF” **但现实是**： 这份说明不是介绍 API，而是"
-  },
-  {
-    "description": "终于来了！Onlyoffice中国版Excel支持“仅对自己可见”筛选，多人协作不再互相干扰",
-    "title": "终于来了！Onlyoffice中国版Excel支持“仅对自己可见”筛选，多人协作不再互相干扰",
-    "permalink": "/posts/filter-myself",
-    "outline": "deep",
-    "category": "文章",
-    "tags": [
-      "onlyoffice",
-      "excel筛选",
-      "仅对自己可见"
-    ],
-    "excerpt": "在多人协同编辑Excel文档时，筛选功能的相互干扰一直是一个典型的协作痛点。当一位协作者对表格进行筛选操作时，其他所有正在查看同一文档的用户都会被迫同步到相同的筛选视图，导致各自的工作流被频繁打断。这种设计虽然保证了数据一致性，但在实际团队协作中却严重影响了效率。 Onlyoffice中国版（基于9"
   },
   {
     "description": "企业协同文档工具（WebOffice）选型指南：从微软、金山到开源封装的全面解析",
@@ -161,6 +147,29 @@
       "link": "/posts/document-platfrom"
     },
     "excerpt": "很多人在使用文档系统或在线编辑器时都会遇到这样的情况： * 打开文档后字体变了 * 项目符号变成方框 * 勾选符号变乱码 * 文档排版突然变乱 * 在本地电脑正常，但在在线系统里显示不对 例如在使用 OnlyOffice、在线文档系统或文档预览系统时，这类问题尤其常见。 很多人会以为：“是不是系统 "
+  },
+  {
+    "date": "2026-02-27T00:00:00.000Z",
+    "description": "这篇文章对自研Office文档处理产品的技术选型进行了深入分析，核心观点是必须采用“多引擎协同”的架构。以下是根据原文提取的Markdown格式内容，并对表格进行了规范化处理。",
+    "title": "文档能力中台化实践：一份面向自研Office处理产品的理性技术选型说明",
+    "datetime": "2026-02-28 10:50:09",
+    "permalink": "/posts/document-platfrom",
+    "outline": "deep",
+    "category": "文章",
+    "tags": [
+      "onlyoffice",
+      "POI",
+      "文档中台"
+    ],
+    "prev": {
+      "text": "为什么 Office 文档会因为“缺少字体”而出现乱码、符号异常？一文讲清原理、问题与解决方法",
+      "link": "/posts/fonts"
+    },
+    "next": {
+      "text": "信创与数字化转型必备：三大开源Office选型终极指南，一篇讲透！",
+      "link": "/posts/innovation-and-digitization"
+    },
+    "excerpt": "当团队第一次尝试自研 Office 文档处理能力时，往往会低估这件事情的复杂度。 常见误判包括： * ❌ 认为“POI 能读写 Word，就能做大部分文档能力” * ❌ 认为“选一个商业组件就能一劳永逸” * ❌ 认为“文档处理只是转换为 PDF” **但现实是**： 这份说明不是介绍 API，而是"
   },
   {
     "date": "2026-02-27T00:00:00.000Z",
