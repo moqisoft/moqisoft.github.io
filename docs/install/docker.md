@@ -9,23 +9,23 @@ description: onlyoffice中国版docker安装部署教程，包含镜像拉取、
 #### docker hub
 
 ```bash
-docker pull moqisoft/documentserver:9.3.1
+docker pull moqisoft/documentserver:9.3.10
 ```
 
 #### 国内免费第三方加速
 
 **1️⃣ 毫秒镜像**
 ```bash
-docker pull docker.1ms.run/moqisoft/documentserver:9.3.1
+docker pull docker.1ms.run/moqisoft/documentserver:9.3.10
 ```
 **2️⃣ dockerproxy**
 ```bash
-docker pull dockerproxy.net/moqisoft/documentserver:9.3.1
+docker pull dockerproxy.net/moqisoft/documentserver:9.3.10
 ```
 如果使用第三方加速，需要将镜像名修改为正确的名称
 ```bash
-docker tag docker.1ms.run/moqisoft/documentserver:9.3.1 moqisoft/documentserver:9.3.1
-docker rmi docker.1ms.run/moqisoft/documentserver:9.3.1
+docker tag docker.1ms.run/moqisoft/documentserver:9.3.10 moqisoft/documentserver:9.3.10
+docker rmi docker.1ms.run/moqisoft/documentserver:9.3.10
 ```
 
 如遇第三方加速不稳定，请关注第三方官方网站或交流群公告
@@ -45,7 +45,7 @@ docker run -itd \
     -v /host/path/to/App_Data:/var/www/onlyoffice/App_Data \  
     -v /proc/cpuinfo:/host/proc/cpuinfo \  # 高级版必须
     -v /sys/class:/host/sys/class \  # 高级版必须
-    moqisoft/documentserver:9.3.1  # 注意替换为实际镜像名
+    moqisoft/documentserver:9.3.10  # 注意替换为实际镜像名
 ```
 
 ## 启动 example
