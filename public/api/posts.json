@@ -1,5 +1,23 @@
 [
   {
+    "description": "在日常办公中，选中文字后长途奔袭去找顶部工具栏的经历，相信每个人都深有体会。今天我们来聊聊 OnlyOffice 中国版带来的一个“小而美”的交互升级——**浮动工具栏**。",
+    "title": "选中即改，工具随行：OnlyOffice 的浮动工具栏新功能让我少点了一万次鼠标",
+    "datetime": "2026-04-10 09:10:43",
+    "permalink": "/posts/minitoolbar",
+    "outline": "deep",
+    "category": "文章",
+    "tags": [
+      "onlyoffice",
+      "浮动工具栏",
+      "迷你工具栏"
+    ],
+    "next": {
+      "text": "终于来了！Onlyoffice中国版Excel支持“仅对自己可见”筛选，多人协作不再互相干扰",
+      "link": "/posts/filter-myself"
+    },
+    "excerpt": "在日常办公中，选中文字后长途奔袭去找顶部工具栏的经历，相信每个人都深有体会。今天我们来聊聊 OnlyOffice 中国版带来的一个“小而美”的交互升级——**浮动工具栏**。 使用办公软件时，你是否每天都在重复这套动作？ 1. 选中一段文字 2. 鼠标大范围移动到**顶部工具栏** 3. 找功能、点"
+  },
+  {
     "description": "终于来了！Onlyoffice中国版Excel支持“仅对自己可见”筛选，多人协作不再互相干扰",
     "title": "终于来了！Onlyoffice中国版Excel支持“仅对自己可见”筛选，多人协作不再互相干扰",
     "datetime": "2026-03-24 09:36:42",
@@ -11,6 +29,10 @@
       "excel筛选",
       "仅对自己可见"
     ],
+    "prev": {
+      "text": "选中即改，工具随行：OnlyOffice 的浮动工具栏新功能让我少点了一万次鼠标",
+      "link": "/posts/minitoolbar"
+    },
     "next": {
       "text": "OnlyOffice 开档及字体加载慢——问题剖析与优化落地实战",
       "link": "/posts/browserfont"
@@ -240,6 +262,36 @@
     "excerpt": "在实际的企业运维、Web 架构设计以及多系统整合场景中，将应用部署到 **Nginx 子目录（Subdirectory）** 是一种非常常见且实用的方式。本文将从原理、典型应用场景、注意事项入手，系统讲解 **Nginx 子目录部署** 的常见模式，并重点讨论 **ONLYOFFICE Docume"
   },
   {
+    "date": "2026-02-27T00:00:00.000Z",
+    "description": "本文基于生产环境真实踩坑经验，深入分析ONLYOFFICE Document Server与PostgreSQL搭配时的稳定性问题，并提供经过验证的参数优化方案，助你解决90%的部署故障。",
+    "title": "企业级ONLYOFFICE + PostgreSQL部署避坑指南：参数优化与稳定性分析",
+    "datetime": "2026-02-27 17:18:25",
+    "permalink": "/posts/9ce528",
+    "tags": [
+      "onlyoffice",
+      "postgresql",
+      "部署优化"
+    ],
+    "prev": {
+      "text": "如何避免合同在线编辑中的人为错误？一套更“工程化”的 OnlyOffice 使用方案",
+      "link": "/posts/user-readonly-mode"
+    },
+    "excerpt": "在企业私有化部署场景中，ONLYOFFICE Document Server（由 ONLYOFFICE 提供）常与 PostgreSQL 搭配使用。在实际生产环境中，经常会出现以下现象： - 长时间编辑后偶发保存失败 - 高并发协作时文档异常 - 转换任务间歇性失败 - 数据库日志出现 `conne"
+  },
+  {
+    "description": "文档不大却总打不开？一文讲透 ONLYOFFICE 内存爆炸的真相",
+    "title": "文档不大却总打不开？一文讲透 ONLYOFFICE 内存爆炸的真相",
+    "permalink": "/posts/oom",
+    "outline": "deep",
+    "category": "文章",
+    "tags": [
+      "onlyoffice",
+      "大文档",
+      "内存溢出"
+    ],
+    "excerpt": "最近我们频繁收到用户反馈： - “我的 Word 文件才 20MB / 25MB，并不大，为什么打不开？” - “有时提示服务器限制，有时浏览器直接崩溃，这是怎么回事？” --- - 页面卡死 - 标签页自动关闭 - Chrome 提示 “Aw, Snap!” --- **这些问题几乎都不是“文件大"
+  },
+  {
     "date": "2025-12-30T00:00:00.000Z",
     "description": "本文基于生产环境真实踩坑经验，深入分析ONLYOFFICE Document Server与PostgreSQL搭配时的稳定性问题，并提供经过验证的参数优化方案，助你解决90%的部署故障。",
     "title": "如何避免合同在线编辑中的人为错误？一套更“工程化”的 OnlyOffice 使用方案",
@@ -261,22 +313,5 @@
       "link": "/posts/9ce528"
     },
     "excerpt": "在企业合同管理场景中，传统的“在线 Word 编辑”模式存在以下核心问题： * 合同格式、条款高度敏感，人工编辑极易引入错误 * 编辑权限粒度粗，无法区分“谁能改哪一部分” * 编辑态、审批态、签署态不一致，存在法律风险 * 文档自由编辑难以满足审计、留痕与合规要求 为解决上述问题，本方案提出 **"
-  },
-  {
-    "date": "2026-02-27T00:00:00.000Z",
-    "description": "本文基于生产环境真实踩坑经验，深入分析ONLYOFFICE Document Server与PostgreSQL搭配时的稳定性问题，并提供经过验证的参数优化方案，助你解决90%的部署故障。",
-    "title": "企业级ONLYOFFICE + PostgreSQL部署避坑指南：参数优化与稳定性分析",
-    "datetime": "2026-02-27 17:18:25",
-    "permalink": "/posts/9ce528",
-    "tags": [
-      "onlyoffice",
-      "postgresql",
-      "部署优化"
-    ],
-    "prev": {
-      "text": "如何避免合同在线编辑中的人为错误？一套更“工程化”的 OnlyOffice 使用方案",
-      "link": "/posts/user-readonly-mode"
-    },
-    "excerpt": "在企业私有化部署场景中，ONLYOFFICE Document Server（由 ONLYOFFICE 提供）常与 PostgreSQL 搭配使用。在实际生产环境中，经常会出现以下现象： - 长时间编辑后偶发保存失败 - 高并发协作时文档异常 - 转换任务间歇性失败 - 数据库日志出现 `conne"
   }
 ]

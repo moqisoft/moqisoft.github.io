@@ -9,6 +9,9 @@ tags:
   - onlyoffice
   - excel筛选
   - 仅对自己可见
+prev:
+  text: 选中即改，工具随行：OnlyOffice 的浮动工具栏新功能让我少点了一万次鼠标
+  link: /posts/minitoolbar
 next:
   text: OnlyOffice 开档及字体加载慢——问题剖析与优化落地实战
   link: /posts/browserfont
