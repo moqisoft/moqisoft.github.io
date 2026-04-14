@@ -2,6 +2,7 @@
 description: >-
   一篇涵盖OnlyOffice中国版从Docker部署、中文字体定制、性能加速优化、个性化品牌配置到回调机制集成的全链路企业级落地指南。适合需要将OnlyOffice中国版接入OA、云盘、知识库等业务系统的开发团队参考。
 title: 从零到一：OnlyOffice中国版企业级完整落地指南
+datetime: '2026-04-12 22:49:34'
 permalink: /posts/enterprise-deployment
 outline: deep
 category: 文章

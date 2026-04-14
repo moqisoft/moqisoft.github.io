@@ -9,6 +9,9 @@ tags:
   - onlyoffice
   - 大文档
   - 内存溢出
+prev:
+  text: 企业文档防泄漏实战：基于OnlyOffice中国版构建多层安全防护体系
+  link: /posts/document-security
 next:
   text: 选中即改，工具随行：OnlyOffice 的浮动工具栏新功能让我少点了一万次鼠标
   link: /posts/minitoolbar

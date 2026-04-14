@@ -51,3 +51,7 @@ description: 针对OnlyOffice文档服务，本地字体功能通过智能裁剪
 
 ## 字体下载体积对比
 ![字体下载体积对比](../../public/images/browserfont2.png)
+
+## 对比测试
+
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=116375024568994&bvid=BV13iDxBHEu3&cid=37487706775&p=1" scrolling="no" border="0" width="100%" height="400" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
