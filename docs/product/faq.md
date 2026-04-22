@@ -14,6 +14,11 @@ description: onlyoffice中国版常见问题解答，解决文档下载失败、
 
 总之下载失败时可以查看容器日志，内部会清晰的告诉你为什么失败。
 
+## 文档可编辑，保存提示「无法保存」
+
+- 检查浏览器控制台是否有报错。
+- 检查容器日志，是否保存回调接口实现存在问题。
+
 ## 提示「安全令牌格式不正确」
 
 onlyoffice documentserver 默认开启了 jwt 认证，你如果执意开启，可参考官方文档 [签名](https://api.onlyoffice.com/docs/docs-api/additional-api/signature/)。如果非必要，建议按以下操作
