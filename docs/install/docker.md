@@ -41,12 +41,16 @@ docker run -itd \
     --privileged \  # 高级版必须，某些情况下启动报错也需要传递该参数
     -e ALLOW_PRIVATE_IP_ADDRESS=true \  
     -e JWT_ENABLED=false \  
-    -v /host/path/to/Data:/var/www/onlyoffice/Data \  # 高级版必须   
-    -v /host/path/to/App_Data:/var/www/onlyoffice/App_Data \  
-    -v /proc/cpuinfo:/host/proc/cpuinfo \  # 高级版必须
-    -v /sys/class:/host/sys/class \  # 高级版必须
+    -v 宿主机目录/Data:/var/www/onlyoffice/Data \  # 高级版必须，宿主机目录根据实际修改   
+    -v 宿主机目录/App_Data:/var/www/onlyoffice/App_Data \  # 宿主机目录根据实际修改   
+    -v /proc/cpuinfo:/host/proc/cpuinfo \  # 高级版必须，原样挂载，无需改动
+    -v /sys/class:/host/sys/class \  # 高级版必须，原样挂载，无需改动
     moqisoft/documentserver:9.3.10  # 注意替换为实际镜像名
 ```
+
+> [!IMPORTANT]
+> 请确保宿主机默认有 `/proc/cpuinfo` 和 `/sys/class` 目录，否则机器码会变动。
+> MacOS 系统不存在这些目录，无法稳定稳定获取机器码。请不要作为开发或生产环境。
 
 ## 启动 example
 
