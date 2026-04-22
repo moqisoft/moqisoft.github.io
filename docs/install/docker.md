@@ -49,7 +49,7 @@ docker run -itd \
 ```
 
 > [!IMPORTANT]
-> - 建议使用 `Ubuntu` 或 `CentOS` 操作系统。    
+> - 宿主机建议使用 `Ubuntu` 或 `CentOS` 操作系统。    
 > - 请确保宿主机默认有 `/proc/cpuinfo` 和 `/sys/class` 目录，否则机器码会变动。    
 > - `MacOS` 系统不存在这些目录，无法稳定获取机器码。请不要作为宿主环境使用。
 
