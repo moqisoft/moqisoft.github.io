@@ -54,3 +54,11 @@ location /myeditor/ {
 }
 
 ```
+
+## 集成使用
+
+在使用 `api.js` 时，同样需要需要 url 中增加子目录路径，比如
+
+```html
+<script src="http://yourDomain/myeditor/web-apps/apps/api/documents/apijs"></script>
+```
